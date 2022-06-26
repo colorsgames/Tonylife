@@ -48,7 +48,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: LegSlovers/New LimbSolver2D/New LimbSolver2D_Target
+    path: LegSlovers/LeftLegSlover/LeftLegSlover_Target
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -82,7 +82,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: LegSlovers/New LimbSolver2D (1)/New LimbSolver2D (1)_Target
+    path: LegSlovers/RightLegSlover/RightLegSlover_Target
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -94,14 +94,14 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 686771445
+      path: 4247253945
       attribute: 1
       script: {fileID: 0}
       typeID: 4
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 4197862128
+      path: 4038564628
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -163,7 +163,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: LegSlovers/New LimbSolver2D/New LimbSolver2D_Target
+    path: LegSlovers/LeftLegSlover/LeftLegSlover_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -200,7 +200,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: LegSlovers/New LimbSolver2D/New LimbSolver2D_Target
+    path: LegSlovers/LeftLegSlover/LeftLegSlover_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -237,7 +237,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: LegSlovers/New LimbSolver2D/New LimbSolver2D_Target
+    path: LegSlovers/LeftLegSlover/LeftLegSlover_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -274,7 +274,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: LegSlovers/New LimbSolver2D (1)/New LimbSolver2D (1)_Target
+    path: LegSlovers/RightLegSlover/RightLegSlover_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -311,7 +311,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: LegSlovers/New LimbSolver2D (1)/New LimbSolver2D (1)_Target
+    path: LegSlovers/RightLegSlover/RightLegSlover_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -348,7 +348,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: LegSlovers/New LimbSolver2D (1)/New LimbSolver2D (1)_Target
+    path: LegSlovers/RightLegSlover/RightLegSlover_Target
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []

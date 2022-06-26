@@ -146,13 +146,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040817}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6952278, w: 0.71878964}
+  m_LocalPosition: {x: -0.11611999, y: -0.0038708963, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 156664654}
   - {fileID: 737329110}
-  m_Father: {fileID: 5686200234437353472}
+  m_Father: {fileID: 7955678709236145724}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &146109603
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 156664654}
   - component: {fileID: 156664653}
   m_Layer: 0
-  m_Name: New LimbSolver2D
+  m_Name: LeftArmSlover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
     - {x: 0, y: 0, z: 0, w: 0}
     - {x: 0, y: 0, z: 0, w: 0}
     - {x: 0, y: 0, z: 0, w: 0}
-  m_Flip: 0
+  m_Flip: 1
 --- !u!4 &156664654
 Transform:
   m_ObjectHideFlags: 0
@@ -274,13 +274,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218648619}
-  m_LocalRotation: {x: -0, y: -0, z: -0.00008881855, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0086090565, w: 0.999963}
   m_LocalPosition: {x: 0.425, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3052889719315281835}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -360.01}
+  m_LocalEulerAnglesHint: {x: -180, y: 180, z: -539.013}
 --- !u!1 &360259969
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 360259970}
   m_Layer: 0
-  m_Name: New LimbSolver2D_Target
+  m_Name: LeftLegSlover_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 391214945}
   - component: {fileID: 391214946}
   m_Layer: 0
-  m_Name: New LimbSolver2D
+  m_Name: LeftLegSlover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 737329110}
   - component: {fileID: 737329109}
   m_Layer: 0
-  m_Name: New LimbSolver2D
+  m_Name: RightArmSlover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -607,7 +607,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326699814}
-  m_LocalRotation: {x: -0, y: -0, z: 0.004130203, w: 0.9999915}
+  m_LocalRotation: {x: -0, y: -0, z: 0.004130233, w: 0.9999915}
   m_LocalPosition: {x: 0.425, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 1333203899}
   - component: {fileID: 1333203898}
   m_Layer: 0
-  m_Name: New LimbSolver2D (1)
+  m_Name: RightLegSlover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -891,7 +891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1733660623}
   m_Layer: 0
-  m_Name: New LimbSolver2D_Target
+  m_Name: 'RightArmSlover_Target '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -905,7 +905,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733660622}
   m_LocalRotation: {x: -0, y: -0, z: 0.71007127, w: -0.70412976}
-  m_LocalPosition: {x: 0.43248647, y: -0.043, z: 0}
+  m_LocalPosition: {x: 0.43248647, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 737329110}
@@ -953,7 +953,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1898086733}
   m_Layer: 0
-  m_Name: New LimbSolver2D (1)_Target
+  m_Name: RightLegSlover_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1047,7 +1047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045844662}
   m_Layer: 0
-  m_Name: New LimbSolver2D_Target
+  m_Name: LeftArmSlover_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,7 +1061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045844661}
   m_LocalRotation: {x: -0, y: -0, z: 0.71012264, w: -0.704078}
-  m_LocalPosition: {x: -0.427, y: -0.043, z: 0}
+  m_LocalPosition: {x: -0.4434172, y: -0.042999983, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 156664654}
@@ -1681,7 +1681,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 7
   m_Sprite: {fileID: 3954106349508136256, guid: 76cd23c4fb3ceef4fadcf708ca8fae19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1732,7 +1732,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 7
   m_Sprite: {fileID: -1479145818716936957, guid: 76cd23c4fb3ceef4fadcf708ca8fae19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2801,7 +2801,6 @@ Transform:
   - {fileID: 7955678709236145724}
   - {fileID: 3060008968523747569}
   - {fileID: 3987714033535292250}
-  - {fileID: 1040818}
   m_Father: {fileID: 1609579004321578253}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2821,8 +2820,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6468798449189611008}
   m_Bounds:
-    m_Center: {x: 0.0060346127, y: 1.2211013, z: 0}
-    m_Extent: {x: 0.12709123, y: 0.25103906, z: 0}
+    m_Center: {x: 0.0022433996, y: 1.2218931, z: 0}
+    m_Extent: {x: 0.13140242, y: 0.25313902, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!4 &5781429463857949358
@@ -2878,7 +2877,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_Sprite: {fileID: -652885742470038749, guid: 76cd23c4fb3ceef4fadcf708ca8fae19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3191,7 +3190,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3393646652449123488}
-  m_LocalRotation: {x: 0, y: 0, z: 0.9999223, w: -0.012470645}
+  m_LocalRotation: {x: 0, y: 0, z: 0.99999297, w: -0.0037729777}
   m_LocalPosition: {x: 0.76984584, y: 0.4449891, z: 0}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Children:
@@ -3504,8 +3503,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 3052889719315281835}
   m_Bounds:
-    m_Center: {x: 0.34383225, y: 1.2207631, z: 0}
-    m_Extent: {x: 0.062544465, y: 0.25001112, z: 0}
+    m_Center: {x: 0.3313285, y: 1.2205772, z: 0}
+    m_Extent: {x: 0.06679508, y: 0.25103915, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7893132229567263118
@@ -3540,6 +3539,7 @@ Transform:
   - {fileID: 6468798449189611008}
   - {fileID: 4718480361575301028}
   - {fileID: 15024139850394605}
+  - {fileID: 1040818}
   m_Father: {fileID: 5686200234437353472}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3944,7 +3944,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_Sprite: {fileID: -124786755109532300, guid: 76cd23c4fb3ceef4fadcf708ca8fae19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
