@@ -57,7 +57,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: ArmSolvers/LeftArmSlover/LeftArmSlover_Target
+    path: ArmSolvers/LeftArmSolver/LeftArmSolver_Target
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -100,7 +100,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: 'ArmSolvers/RightArmSlover/RightArmSlover_Target '
+    path: ArmSolvers/RightArmSolver/RightArmSolver_Target
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -112,14 +112,14 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 560708735
+      path: 145576741
       attribute: 1
       script: {fileID: 0}
       typeID: 4
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1641104475
+      path: 443452434
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -190,7 +190,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: ArmSolvers/LeftArmSlover/LeftArmSlover_Target
+    path: ArmSolvers/LeftArmSolver/LeftArmSolver_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -236,7 +236,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: ArmSolvers/LeftArmSlover/LeftArmSlover_Target
+    path: ArmSolvers/LeftArmSolver/LeftArmSolver_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -282,7 +282,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: ArmSolvers/LeftArmSlover/LeftArmSlover_Target
+    path: ArmSolvers/LeftArmSolver/LeftArmSolver_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -328,7 +328,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: 'ArmSolvers/RightArmSlover/RightArmSlover_Target '
+    path: ArmSolvers/RightArmSolver/RightArmSolver_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -374,7 +374,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: 'ArmSolvers/RightArmSlover/RightArmSlover_Target '
+    path: ArmSolvers/RightArmSolver/RightArmSolver_Target
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -420,7 +420,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: 'ArmSolvers/RightArmSlover/RightArmSlover_Target '
+    path: ArmSolvers/RightArmSolver/RightArmSolver_Target
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []
