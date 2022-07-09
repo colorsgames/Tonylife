@@ -8,12 +8,19 @@ public class Player : AliveCreature
 
     protected override void Update()
     {
+        if (!Alive) return;
+
         base.Update();
 
         hor = Input.GetAxis("Horizontal");
 
         running = Input.GetButton("Run");
         desiredJump |= Input.GetButtonDown("Jump");
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Dead();
+        }
     }
 
     private void FixedUpdate()

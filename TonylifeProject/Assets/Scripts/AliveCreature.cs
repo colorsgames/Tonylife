@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.U2D.IK;
 using UnityEngine;
 
 public abstract class AliveCreature : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
-    public bool alive = true;
 
     [Header("Movement Settings")]
     [SerializeField] private float walkSpeed;
@@ -23,6 +23,8 @@ public abstract class AliveCreature : MonoBehaviour
     [SerializeField] private float radiusCheckCircle;
     [SerializeField] private LayerMask checkMask;
 
+    public bool Alive { get { return this.alive; } }
+
     protected bool running;
     protected bool desiredJump;
 
@@ -32,6 +34,8 @@ public abstract class AliveCreature : MonoBehaviour
     private Rigidbody2D connectedBody;
     private Rigidbody2D previousConnectedBody;
 
+    private IKManager2D iKManager2D;
+
     private Vector2 velocity;
     private Vector2 connectionWorldPosition;
     private Vector2 connectionVelocity;
@@ -40,10 +44,14 @@ public abstract class AliveCreature : MonoBehaviour
     private float curretSize;
     private float curretHealth;
 
+    private bool alive = true;
+
     protected virtual void Start()
     {
         curretHealth = maxHealth;
         rb = GetComponent<Rigidbody2D>();
+        iKManager2D = GetComponent<IKManager2D>();
+
         if (GetComponentInChildren<Rigidbody2D>())
         {
             limbs = GetComponentsInChildren<Rigidbody2D>();
@@ -123,7 +131,6 @@ public abstract class AliveCreature : MonoBehaviour
             {
                 Dead();
             }
-            alive = false;
         }
     }
 
@@ -148,13 +155,18 @@ public abstract class AliveCreature : MonoBehaviour
         legAnimator.enabled = false;
         armAnimator.enabled = false;
 
+        iKManager2D.weight = 0;
+
         foreach (Rigidbody2D item in limbs)
         {
             if (item.isKinematic)
             {
                 item.isKinematic = false;
+                item.velocity = velocity;
             }
         }
+
+        alive = false;
     }
 
     protected bool isGrounded()
