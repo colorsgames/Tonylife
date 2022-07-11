@@ -6,6 +6,11 @@ using UnityEngine;
 public abstract class AliveCreature : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
+    [Header("Inventory Settings")]
+    [SerializeField] protected float stronglyDropItemForce = 20f;
+    [SerializeField] protected float weaklyDropItemForce = 0f;
+    [SerializeField] protected float rotationForce = 5f;
+    [SerializeField] protected Transform dropTarget;
 
     [Header("Movement Settings")]
     [SerializeField] private float walkSpeed;
@@ -28,6 +33,9 @@ public abstract class AliveCreature : MonoBehaviour
     protected bool running;
     protected bool desiredJump;
 
+    protected Inventory inventory;
+    protected Weapon curretWeapon;
+
     protected Rigidbody2D rb;
     protected Rigidbody2D[] limbs;
 
@@ -40,6 +48,8 @@ public abstract class AliveCreature : MonoBehaviour
     private Vector2 connectionWorldPosition;
     private Vector2 connectionVelocity;
 
+    private List<InteractiveObject> interactiveObjects = new List<InteractiveObject>();
+
     private float curretSpeed;
     private float curretSize;
     private float curretHealth;
@@ -51,11 +61,13 @@ public abstract class AliveCreature : MonoBehaviour
         curretHealth = maxHealth;
         rb = GetComponent<Rigidbody2D>();
         iKManager2D = GetComponent<IKManager2D>();
+        inventory = GetComponent<Inventory>();
 
         if (GetComponentInChildren<Rigidbody2D>())
         {
             limbs = GetComponentsInChildren<Rigidbody2D>();
         }
+
         curretSpeed = walkSpeed;
         curretSize = transform.localScale.x;
     }
@@ -110,6 +122,51 @@ public abstract class AliveCreature : MonoBehaviour
         rb.velocity = velocity;
     }
 
+    protected virtual void Dead()
+    {
+        legAnimator.enabled = false;
+        armAnimator.enabled = false;
+
+        iKManager2D.weight = 0;
+
+        foreach (Rigidbody2D item in limbs)
+        {
+            if (item.isKinematic)
+            {
+                item.isKinematic = false;
+                item.velocity = velocity;
+            }
+        }
+
+        alive = false;
+    }
+
+    protected InteractiveObject GetCloseInterective()
+    {
+        if (interactiveObjects.Count > 0)
+        {
+            Vector3[] interactObjPos = new Vector3[interactiveObjects.Count];
+            List<float> distance = new List<float>();
+            for (int i = 0; i < interactiveObjects.Count; i++)
+            {
+                interactObjPos[i] = interactiveObjects[i].transform.position;
+                Vector3 offset = interactObjPos[i] - transform.position;
+                distance.Add(offset.magnitude);
+            }
+
+            float minDist = Mathf.Min(distance.ToArray());
+            int id = distance.IndexOf(minDist);
+
+            return interactiveObjects[id];
+        }
+        else return null;
+    }
+
+    protected bool isGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, radiusCheckCircle, checkMask);
+    }
+
     public void Rotate(float rot)
     {
         if (rot > 0)
@@ -148,30 +205,6 @@ public abstract class AliveCreature : MonoBehaviour
         {
             return Vector2.zero;
         }
-    }
-
-    protected virtual void Dead()
-    {
-        legAnimator.enabled = false;
-        armAnimator.enabled = false;
-
-        iKManager2D.weight = 0;
-
-        foreach (Rigidbody2D item in limbs)
-        {
-            if (item.isKinematic)
-            {
-                item.isKinematic = false;
-                item.velocity = velocity;
-            }
-        }
-
-        alive = false;
-    }
-
-    protected bool isGrounded()
-    {
-        return Physics2D.OverlapCircle(groundCheck.position, radiusCheckCircle, checkMask);
     }
 
     private Vector2 DesiredVelocity(float hor)
@@ -224,6 +257,22 @@ public abstract class AliveCreature : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<InteractiveObject>())
+        {
+            interactiveObjects.Add(collision.gameObject.GetComponent<InteractiveObject>());
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<InteractiveObject>())
+        {
+            interactiveObjects.Remove(collision.gameObject.GetComponent<InteractiveObject>());
+        }
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (isGrounded())
@@ -235,7 +284,7 @@ public abstract class AliveCreature : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmos()
+    protected virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, radiusCheckCircle);
