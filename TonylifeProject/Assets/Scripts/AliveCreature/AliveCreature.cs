@@ -20,7 +20,8 @@ public abstract class AliveCreature : MonoBehaviour
 
     [Header("Animations")]
     [SerializeField] private Animator legAnimator;
-    [SerializeField] private Animator armAnimator;
+    [SerializeField] private Animator leftArmAnimator;
+    [SerializeField] private Animator rightArmAnimator;
     [SerializeField] private float changeAnimSpeed;
 
     [Header("Ground Check")]
@@ -125,7 +126,8 @@ public abstract class AliveCreature : MonoBehaviour
     protected virtual void Dead()
     {
         legAnimator.enabled = false;
-        armAnimator.enabled = false;
+        leftArmAnimator.enabled = false;
+        rightArmAnimator.enabled = false;
 
         iKManager2D.weight = 0;
 
@@ -231,27 +233,33 @@ public abstract class AliveCreature : MonoBehaviour
 
     private void MoveAnimation(float hor)
     {
-        if (legAnimator != null && armAnimator != null)
+        if (legAnimator && leftArmAnimator && rightArmAnimator)
         {
             float curretBlendAnim = legAnimator.GetFloat("Blend");
             float maxChangeSpeed = changeAnimSpeed * Time.deltaTime;
 
             if (hor != 0 && isGrounded())
             {
-                legAnimator.SetFloat("Blend", running ? Mathf.Lerp(curretBlendAnim, 1f, maxChangeSpeed) : Mathf.Lerp(curretBlendAnim, 0.5f, maxChangeSpeed));
-                armAnimator.SetFloat("Blend", running ? Mathf.Lerp(curretBlendAnim, 1f, maxChangeSpeed) : Mathf.Lerp(curretBlendAnim, 0.5f, maxChangeSpeed));
+                float blend = running ? Mathf.Lerp(curretBlendAnim, 1f, maxChangeSpeed) : Mathf.Lerp(curretBlendAnim, 0.5f, maxChangeSpeed);
+                legAnimator.SetFloat("Blend", blend);
+                leftArmAnimator.SetFloat("Blend", blend);
+                rightArmAnimator.SetFloat("Blend", blend);
             }
             else if (!isGrounded())
             {
-                legAnimator.SetFloat("Blend", Mathf.Lerp(curretBlendAnim, 1.5f, maxChangeSpeed));
-                armAnimator.SetFloat("Blend", Mathf.Lerp(curretBlendAnim, 1.5f, maxChangeSpeed));
+                float blend = Mathf.Lerp(curretBlendAnim, 1.5f, maxChangeSpeed);
+                legAnimator.SetFloat("Blend", blend);
+                leftArmAnimator.SetFloat("Blend", blend);
+                rightArmAnimator.SetFloat("Blend", blend);
             }
             else
             {
                 if (curretBlendAnim >= 0.01f)
                 {
-                    legAnimator.SetFloat("Blend", Mathf.Lerp(curretBlendAnim, 0f, maxChangeSpeed));
-                    armAnimator.SetFloat("Blend", Mathf.Lerp(curretBlendAnim, 0f, maxChangeSpeed));
+                    float blend = Mathf.Lerp(curretBlendAnim, 0f, maxChangeSpeed);
+                    legAnimator.SetFloat("Blend", blend);
+                    leftArmAnimator.SetFloat("Blend", blend);
+                    rightArmAnimator.SetFloat("Blend", blend);
                 }
             }
         }
