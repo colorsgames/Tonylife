@@ -53,7 +53,7 @@ public class Inventory : MonoBehaviour
         if (takeItemId < 0) return;
         arms.runtimeAnimatorController = armDefaultController;
         busy = false;
-        Rigidbody2D rb = Instantiate(items[takeItemId].weaponPrefab, pos, startRot).GetComponent<Rigidbody2D>();
+        Rigidbody2D rb = Instantiate(items[takeItemId].WeaponPrefab, pos, startRot).GetComponent<Rigidbody2D>();
         rb.AddForce(dir * dropForce, ForceMode2D.Impulse);
         rb.AddTorque(-dir.x * rotationForce, ForceMode2D.Impulse);
         items[takeItemId].gameObject.SetActive(false);

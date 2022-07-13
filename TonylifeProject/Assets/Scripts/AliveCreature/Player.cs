@@ -24,11 +24,27 @@ public class Player : AliveCreature
             Use();
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
             if (curretWeapon)
             {
                 curretWeapon.Attack();
+            }
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (curretWeapon)
+            {
+                curretWeapon.StartAttackAnimations();
+            }
+        }
+
+        if (Input.GetButtonUp("Fire1"))
+        {
+            if (curretWeapon)
+            {
+                curretWeapon.StopAttack();
             }
         }
 
