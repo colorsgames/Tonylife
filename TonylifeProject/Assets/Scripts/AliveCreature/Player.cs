@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Player : AliveCreature
 {
-    private InteractiveObject closeIntObj;
-
     private float hor;
 
     private bool canUse;
@@ -23,16 +21,7 @@ public class Player : AliveCreature
 
         if (Input.GetButtonDown("Use") && canUse)
         {
-            closeIntObj.Use();
-            if (closeIntObj.GetComponent<Item>())
-            {
-                if (inventory.Busy)
-                {
-                    inventory.DropItem(dropTarget.position, MyDirection(), dropTarget.rotation, weaklyDropItemForce, 0);
-                }
-                inventory.TakeItem(closeIntObj.GetComponent<Item>().ItemInfo.Id);
-                curretWeapon = inventory.GetCurretWeapon();
-            }
+            Use();
         }
 
         if (Input.GetButtonDown("Fire1"))
@@ -45,11 +34,7 @@ public class Player : AliveCreature
 
         if (Input.GetButtonDown("Fire2"))
         {
-            if (inventory.Busy)
-            {
-                inventory.DropItem(dropTarget.position, MyDirection(), dropTarget.rotation, stronglyDropItemForce, rotationForce);
-                curretWeapon = null;
-            }
+            Drop();
         }
 
         if (Input.GetKeyDown(KeyCode.G))
@@ -70,7 +55,7 @@ public class Player : AliveCreature
         closeIntObj = GetCloseInterective();
         if (closeIntObj)
         {
-            GameManager.instance.IndicatorWakeUp(closeIntObj.transform.GetChild(0));
+            GameManager.instance.IndicatorWakeUp(closeIntObj.transform);
             canUse = true;
         }
         else

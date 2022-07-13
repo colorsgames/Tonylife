@@ -5,11 +5,11 @@ using UnityEngine;
 
 public abstract class AliveCreature : MonoBehaviour
 {
+    public Transform DropTarget { get { return dropTarget; } }
+
     [SerializeField] private float maxHealth;
-    [Header("Inventory Settings")]
-    [SerializeField] protected float stronglyDropItemForce = 20f;
+    [Header("Drop Item Settings")]
     [SerializeField] protected float weaklyDropItemForce = 0f;
-    [SerializeField] protected float rotationForce = 5f;
     [SerializeField] protected Transform dropTarget;
 
     [Header("Movement Settings")]
@@ -20,8 +20,7 @@ public abstract class AliveCreature : MonoBehaviour
 
     [Header("Animations")]
     [SerializeField] private Animator legAnimator;
-    [SerializeField] private Animator leftArmAnimator;
-    [SerializeField] private Animator rightArmAnimator;
+    [SerializeField] protected Animator armAmimator;
     [SerializeField] private float changeAnimSpeed;
 
     [Header("Ground Check")]
@@ -36,6 +35,7 @@ public abstract class AliveCreature : MonoBehaviour
 
     protected Inventory inventory;
     protected Weapon curretWeapon;
+    protected InteractiveObject closeIntObj;
 
     protected Rigidbody2D rb;
     protected Rigidbody2D[] limbs;
@@ -126,8 +126,7 @@ public abstract class AliveCreature : MonoBehaviour
     protected virtual void Dead()
     {
         legAnimator.enabled = false;
-        leftArmAnimator.enabled = false;
-        rightArmAnimator.enabled = false;
+        armAmimator.enabled = false;
 
         iKManager2D.weight = 0;
 
@@ -209,6 +208,30 @@ public abstract class AliveCreature : MonoBehaviour
         }
     }
 
+    public void Use()
+    {
+        if (!closeIntObj) return;
+        closeIntObj.Use();
+        if (closeIntObj.GetComponent<Item>())
+        {
+            if (inventory.Busy)
+            {
+                inventory.DropItem(dropTarget.position, MyDirection(), dropTarget.rotation, weaklyDropItemForce, 0);
+            }
+            inventory.TakeItem(closeIntObj.GetComponent<Item>().ItemInfo.Id);
+            curretWeapon = inventory.GetCurretWeapon();
+        }
+    }
+
+    public void Drop()
+    {
+        if (inventory.Busy)
+        {
+            armAmimator.SetTrigger("Drop");
+            curretWeapon = null;
+        }
+    }
+
     private Vector2 DesiredVelocity(float hor)
     {
         return transform.right * curretSpeed * hor;
@@ -233,7 +256,7 @@ public abstract class AliveCreature : MonoBehaviour
 
     private void MoveAnimation(float hor)
     {
-        if (legAnimator && leftArmAnimator && rightArmAnimator)
+        if (legAnimator && armAmimator)
         {
             float curretBlendAnim = legAnimator.GetFloat("Blend");
             float maxChangeSpeed = changeAnimSpeed * Time.deltaTime;
@@ -242,15 +265,15 @@ public abstract class AliveCreature : MonoBehaviour
             {
                 float blend = running ? Mathf.Lerp(curretBlendAnim, 1f, maxChangeSpeed) : Mathf.Lerp(curretBlendAnim, 0.5f, maxChangeSpeed);
                 legAnimator.SetFloat("Blend", blend);
-                leftArmAnimator.SetFloat("Blend", blend);
-                rightArmAnimator.SetFloat("Blend", blend);
+                armAmimator.SetFloat("Blend", blend);
+
             }
             else if (!isGrounded())
             {
                 float blend = Mathf.Lerp(curretBlendAnim, 1.5f, maxChangeSpeed);
                 legAnimator.SetFloat("Blend", blend);
-                leftArmAnimator.SetFloat("Blend", blend);
-                rightArmAnimator.SetFloat("Blend", blend);
+                armAmimator.SetFloat("Blend", blend);
+
             }
             else
             {
@@ -258,8 +281,8 @@ public abstract class AliveCreature : MonoBehaviour
                 {
                     float blend = Mathf.Lerp(curretBlendAnim, 0f, maxChangeSpeed);
                     legAnimator.SetFloat("Blend", blend);
-                    leftArmAnimator.SetFloat("Blend", blend);
-                    rightArmAnimator.SetFloat("Blend", blend);
+                    armAmimator.SetFloat("Blend", blend);
+
                 }
             }
         }

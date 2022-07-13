@@ -6,18 +6,18 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hammer
+  m_Name: Pistol
   m_Controller: {fileID: 9100000, guid: 0a380bd2d46849f4c8dfbe6a62a85855, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: bbad74b8b83b4274eb90e725e7b8851b, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: daa6874acc2705c458b4951a8229ff40, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: b31545e898eeaef4ebabe20295902cb7, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: b31545e898eeaef4ebabe20295902cb7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 892030d6bc07e454a94d88813a210349, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 2dbf32f8e72e0154584479bdff7a2617, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 2dbf32f8e72e0154584479bdff7a2617, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4c2fbdfb3024058419ceca59a766ae7a, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 9f1aa554373289e478a9a9006aa4f7a5, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 9f1aa554373289e478a9a9006aa4f7a5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1d237dfe157b4d14ba2d601232b5a7e5, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 44a1ad48949680b408d80608e6d5f8b5, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 44a1ad48949680b408d80608e6d5f8b5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: adc6c5abc8b91af49903d26fb2a9d85b, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: e43afe8385c4ac843971971792ef0837, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: e43afe8385c4ac843971971792ef0837, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bbad74b8b83b4274eb90e725e7b8851b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ed05122be2b29aa4ba8d9c1bdffea140, type: 2}

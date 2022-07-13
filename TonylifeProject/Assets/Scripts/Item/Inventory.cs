@@ -7,10 +7,8 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Weapon[] items;
     [SerializeField] private int takeItemId = -1;
 
-    [SerializeField] private Animator leftArm;
-    [SerializeField] private Animator rightArm;
-    [SerializeField] private RuntimeAnimatorController leftDefaultController;
-    [SerializeField] private RuntimeAnimatorController rightDefaultController;
+    [SerializeField] private Animator arms;
+    [SerializeField] private RuntimeAnimatorController armDefaultController;
 
     public bool Busy { get { return busy; } }
 
@@ -25,8 +23,7 @@ public class Inventory : MonoBehaviour
     {
         if (id < 0)
         {
-            leftArm.runtimeAnimatorController = leftDefaultController;
-            rightArm.runtimeAnimatorController = rightDefaultController;
+            arms.runtimeAnimatorController = armDefaultController;
             return;
         }
         busy = true;
@@ -36,7 +33,7 @@ public class Inventory : MonoBehaviour
             if (i == id)
             {
                 items[i].gameObject.SetActive(true);
-                leftArm.runtimeAnimatorController = items[i].Controller;
+                arms.runtimeAnimatorController = items[i].Controller;
             }
             else
             {
@@ -54,8 +51,7 @@ public class Inventory : MonoBehaviour
     public void DropItem(Vector3 pos, Vector2 dir, Quaternion startRot, float dropForce, float rotationForce)
     {
         if (takeItemId < 0) return;
-        leftArm.runtimeAnimatorController = leftDefaultController;
-        rightArm.runtimeAnimatorController = rightDefaultController;
+        arms.runtimeAnimatorController = armDefaultController;
         busy = false;
         Rigidbody2D rb = Instantiate(items[takeItemId].weaponPrefab, pos, startRot).GetComponent<Rigidbody2D>();
         rb.AddForce(dir * dropForce, ForceMode2D.Impulse);
