@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: SmallRevolver
   m_EditorClassIdentifier: 
   id: 3
+  type: 0

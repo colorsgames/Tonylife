@@ -9,6 +9,8 @@ public class Item : InteractiveObject
 
     public ItemData ItemInfo { get { return itemData; } }
 
+    public int Ammo;
+
     private void Start()
     {
         if(centerOfMass)

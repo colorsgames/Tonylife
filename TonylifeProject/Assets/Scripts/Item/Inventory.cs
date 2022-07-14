@@ -42,6 +42,31 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void TakeItem(Item item)
+    {
+        int id = item.ItemInfo.Id;
+        if (id < 0)
+        {
+            arms.runtimeAnimatorController = armDefaultController;
+            return;
+        }
+        busy = true;
+        takeItemId = id;
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (i == id)
+            {
+                items[i].gameObject.SetActive(true);
+                items[i].maxAmmo = item.Ammo;
+                arms.runtimeAnimatorController = items[i].Controller;
+            }
+            else
+            {
+                items[i].gameObject.SetActive(false);
+            }
+        }
+    }
+
     public Weapon GetCurretWeapon()
     {
         if(takeItemId < 0) return null;
@@ -54,6 +79,13 @@ public class Inventory : MonoBehaviour
         arms.runtimeAnimatorController = armDefaultController;
         busy = false;
         Rigidbody2D rb = Instantiate(items[takeItemId].WeaponPrefab, pos, startRot).GetComponent<Rigidbody2D>();
+
+        Transform instTrans = rb.transform;
+        Vector3 scale = instTrans.localScale;
+        scale.x = dir.x;
+        instTrans.localScale = scale;
+
+        rb.GetComponent<Item>().Ammo = items[takeItemId].maxAmmo;
         rb.AddForce(dir * dropForce, ForceMode2D.Impulse);
         rb.AddTorque(-dir.x * rotationForce, ForceMode2D.Impulse);
         items[takeItemId].gameObject.SetActive(false);

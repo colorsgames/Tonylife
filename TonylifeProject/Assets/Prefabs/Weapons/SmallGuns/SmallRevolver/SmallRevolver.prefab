@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: daa73719c81f5d04296e7adc49f25941, type: 2}
   centerOfMass: {fileID: 0}
+  Ammo: 6
 --- !u!61 &6908167311440026528
 BoxCollider2D:
   m_ObjectHideFlags: 0

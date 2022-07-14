@@ -6,6 +6,7 @@ using UnityEngine;
 public abstract class AliveCreature : MonoBehaviour
 {
     public Transform DropTarget { get { return dropTarget; } }
+    public Weapon CurretWeapon { get { return curretWeapon; } }
 
     [SerializeField] private float maxHealth;
     [Header("Drop Item Settings")]
@@ -56,6 +57,7 @@ public abstract class AliveCreature : MonoBehaviour
     private float curretHealth;
 
     private bool alive = true;
+    private bool canAttack = true;
 
     protected virtual void Start()
     {
@@ -71,12 +73,21 @@ public abstract class AliveCreature : MonoBehaviour
 
         curretSpeed = walkSpeed;
         curretSize = transform.localScale.x;
+
+        curretWeapon = inventory.GetCurretWeapon();
     }
 
     protected virtual void Update()
     {
         curretSpeed = running ? runSpeed : walkSpeed;
-
+        if (curretWeapon)
+        {
+            canAttack = curretWeapon.CanAttack;
+        }
+        else
+        {
+            canAttack = true;
+        }
     }
 
     protected void Movement(float hor)
@@ -211,25 +222,33 @@ public abstract class AliveCreature : MonoBehaviour
     public void Use()
     {
         if (!closeIntObj) return;
+        if (!canAttack) return;
         closeIntObj.Use();
         if (closeIntObj.GetComponent<Item>())
         {
             if (inventory.Busy)
             {
-                inventory.DropItem(dropTarget.position, MyDirection(), dropTarget.rotation, weaklyDropItemForce, 0);
+                Drop();
             }
-            inventory.TakeItem(closeIntObj.GetComponent<Item>().ItemInfo.Id);
+            inventory.TakeItem(closeIntObj.GetComponent<Item>());
             curretWeapon = inventory.GetCurretWeapon();
         }
     }
 
-    public void Drop()
+    public void QuitItem()
     {
+        if (!canAttack) return;
         if (inventory.Busy)
         {
             armAmimator.SetTrigger("Drop");
             curretWeapon = null;
         }
+    }
+
+    public void Drop()
+    {
+        inventory.DropItem(dropTarget.position, MyDirection(), dropTarget.rotation, weaklyDropItemForce, 0);
+        curretWeapon = null;
     }
 
     private Vector2 DesiredVelocity(float hor)

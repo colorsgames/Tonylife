@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: BigRevolver
   m_EditorClassIdentifier: 
   id: 4
+  type: 0

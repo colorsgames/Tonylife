@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: UZI
   m_EditorClassIdentifier: 
   id: 5
+  type: 0

@@ -28,29 +28,13 @@ public class Player : AliveCreature
         {
             if (curretWeapon)
             {
-                curretWeapon.Attack();
-            }
-        }
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            if (curretWeapon)
-            {
-                curretWeapon.StartAttackAnimations();
-            }
-        }
-
-        if (Input.GetButtonUp("Fire1"))
-        {
-            if (curretWeapon)
-            {
-                curretWeapon.StopAttack();
+                curretWeapon.StartAttack();
             }
         }
 
         if (Input.GetButtonDown("Fire2"))
         {
-            Drop();
+            QuitItem();
         }
 
         if (Input.GetKeyDown(KeyCode.G))
@@ -71,8 +55,24 @@ public class Player : AliveCreature
         closeIntObj = GetCloseInterective();
         if (closeIntObj)
         {
-            GameManager.instance.IndicatorWakeUp(closeIntObj.transform);
-            canUse = true;
+            if (closeIntObj.GetComponent<Item>().ItemInfo.type == ItemData.ItemType.guns)
+            {
+                if (closeIntObj.GetComponent<Item>().Ammo > 0)
+                {
+                    GameManager.instance.IndicatorWakeUp(closeIntObj.transform);
+                    canUse = true;
+                }
+                else
+                {
+                    GameManager.instance.IndicatorSleep();
+                    canUse = false;
+                }
+            }
+            else
+            {
+                GameManager.instance.IndicatorWakeUp(closeIntObj.transform);
+                canUse = true;
+            }
         }
         else
         {
