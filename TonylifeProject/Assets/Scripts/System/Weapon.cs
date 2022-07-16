@@ -10,6 +10,8 @@ public class Weapon : MonoBehaviour
         Guns
     }
 
+    public WeaponType WType { get { return type; } }
+
     public RuntimeAnimatorController Controller { get { return controller; } }
     public GameObject WeaponPrefab { get { return weaponPrefab; } }
 
@@ -128,6 +130,10 @@ public class Weapon : MonoBehaviour
             if (rb)
             {
                 rb.AddForce(creature.MyDirection() * force, ForceMode2D.Impulse);
+            }
+            if (hit.collider.GetComponent<AliveCreature>())
+            {
+                hit.collider.GetComponent<AliveCreature>().MakeDamage(damage);
             }
         }
     }

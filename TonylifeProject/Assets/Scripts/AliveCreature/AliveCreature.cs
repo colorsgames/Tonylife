@@ -8,28 +8,28 @@ public abstract class AliveCreature : MonoBehaviour
     public Transform DropTarget { get { return dropTarget; } }
     public Weapon CurretWeapon { get { return curretWeapon; } }
 
-    [SerializeField] private float maxHealth;
+    public bool Alive { get { return this.alive; } }
+
+    [SerializeField] private float maxHealth = 100;
     [Header("Drop Item Settings")]
     [SerializeField] protected float weaklyDropItemForce = 0f;
     [SerializeField] protected Transform dropTarget;
 
     [Header("Movement Settings")]
-    [SerializeField] private float walkSpeed;
-    [SerializeField] private float runSpeed;
-    [SerializeField] private float maxAcceleration;
-    [SerializeField] private float jumpHeight;
+    [SerializeField] private float walkSpeed = 4f;
+    [SerializeField] private float runSpeed = 10f;
+    [SerializeField] private float maxAcceleration = 30f;
+    [SerializeField] private float jumpHeight = 1.5f;
 
     [Header("Animations")]
     [SerializeField] private Animator legAnimator;
     [SerializeField] protected Animator armAmimator;
-    [SerializeField] private float changeAnimSpeed;
+    [SerializeField] private float changeAnimSpeed = 10;
 
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float radiusCheckCircle;
+    [SerializeField] private float radiusCheckCircle = 0.35f;
     [SerializeField] private LayerMask checkMask;
-
-    public bool Alive { get { return this.alive; } }
 
     protected bool running;
     protected bool desiredJump;
@@ -50,7 +50,7 @@ public abstract class AliveCreature : MonoBehaviour
     private Vector2 connectionWorldPosition;
     private Vector2 connectionVelocity;
 
-    private List<InteractiveObject> interactiveObjects = new List<InteractiveObject>();
+    private InteractiveObjectDetector interactiveDetector;
 
     private float curretSpeed;
     private float curretSize;
@@ -65,6 +65,8 @@ public abstract class AliveCreature : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         iKManager2D = GetComponent<IKManager2D>();
         inventory = GetComponent<Inventory>();
+
+        interactiveDetector = GetComponentInChildren<InteractiveObjectDetector>();
 
         if (GetComponentInChildren<Rigidbody2D>())
         {
@@ -150,18 +152,23 @@ public abstract class AliveCreature : MonoBehaviour
             }
         }
 
+        if (curretWeapon)
+        {
+            Drop();
+        }
+
         alive = false;
     }
 
     protected InteractiveObject GetCloseInterective()
     {
-        if (interactiveObjects.Count > 0)
+        if (interactiveDetector.InteractiveObjects.Count > 0)
         {
-            Vector3[] interactObjPos = new Vector3[interactiveObjects.Count];
+            Vector3[] interactObjPos = new Vector3[interactiveDetector.InteractiveObjects.Count];
             List<float> distance = new List<float>();
-            for (int i = 0; i < interactiveObjects.Count; i++)
+            for (int i = 0; i < interactiveDetector.InteractiveObjects.Count; i++)
             {
-                interactObjPos[i] = interactiveObjects[i].transform.position;
+                interactObjPos[i] = interactiveDetector.InteractiveObjects[i].transform.position;
                 Vector3 offset = interactObjPos[i] - transform.position;
                 distance.Add(offset.magnitude);
             }
@@ -169,7 +176,7 @@ public abstract class AliveCreature : MonoBehaviour
             float minDist = Mathf.Min(distance.ToArray());
             int id = distance.IndexOf(minDist);
 
-            return interactiveObjects[id];
+            return interactiveDetector.InteractiveObjects[id];
         }
         else return null;
     }
@@ -307,22 +314,6 @@ public abstract class AliveCreature : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.GetComponent<InteractiveObject>())
-        {
-            interactiveObjects.Add(collision.gameObject.GetComponent<InteractiveObject>());
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.GetComponent<InteractiveObject>())
-        {
-            interactiveObjects.Remove(collision.gameObject.GetComponent<InteractiveObject>());
-        }
-    }
-
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (isGrounded())
@@ -333,10 +324,13 @@ public abstract class AliveCreature : MonoBehaviour
             }
         }
     }
+#if UNITY_EDITOR
 
     protected virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, radiusCheckCircle);
     }
+
+#endif
 }

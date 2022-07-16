@@ -11,12 +11,12 @@ TagManager:
   - 
   - Water
   - UI
-  - Limbs
+  - PlayerLimbs
   - Player
   - Ground
   - Items
-  - 
-  - 
+  - Enemy
+  - EnemyLimbs
   - 
   - 
   - 
@@ -44,9 +44,12 @@ TagManager:
   - name: Decor
     uniqueID: 2617014513
     locked: 0
+  - name: Enemy
+    uniqueID: 100559687
+    locked: 0
   - name: Player
     uniqueID: 2537291937
     locked: 0
-  - name: Weapons
-    uniqueID: 2991844221
+  - name: Items
+    uniqueID: 2701534479
     locked: 0
