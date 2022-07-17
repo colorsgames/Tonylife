@@ -12,26 +12,19 @@ public class Weapon : MonoBehaviour
 
     public WeaponType WType { get { return type; } }
 
-    public RuntimeAnimatorController Controller { get { return controller; } }
-    public GameObject WeaponPrefab { get { return weaponPrefab; } }
+    public RuntimeAnimatorController Controller { get { return data.controller; } }
+    public GameObject WeaponPrefab { get { return data.weaponPrefab; } }
 
     public bool CanAttack { get { return canAttack; } }
     public bool Attacks { get; set; }
 
-    [Header("General Settings")]
-    [SerializeField] private GameObject weaponPrefab;
-    [SerializeField] private RuntimeAnimatorController controller;
+    [SerializeField] private WeaponData data;
     [SerializeField] private WeaponType type = WeaponType.Guns;
-    [SerializeField] private float delay;
-    [SerializeField] private float damage;
-    [SerializeField] private float force;
     [SerializeField] private Transform raycastTarget;
-    [SerializeField] private float raycastLenght = 100;
+    [SerializeField] private float damage;
     [SerializeField] private LayerMask attackMask;
 
-    [Header("Guns Settings")]
-    public int maxAmmo;
-    [SerializeField] private float rechargeTime;
+    [HideInInspector] public int curretAmmo;
 
     private AliveCreature creature;
 
@@ -48,13 +41,14 @@ public class Weapon : MonoBehaviour
     {
         creature = GetComponentInParent<AliveCreature>();
         animator = GetComponentInParent<Animator>();
-        curretTime = delay;
+        curretTime = data.delay;
+        curretAmmo = data.maxAmmo;
     }
 
     private void Update()
     {
         curretTime += Time.deltaTime;
-        if (curretTime > delay)
+        if (curretTime > data.delay)
         {
             canAttack = true;
         }
@@ -67,7 +61,7 @@ public class Weapon : MonoBehaviour
         {
             if (Attacks)
             {
-                RaycastHit2D hit = Physics2D.Raycast(raycastTarget.position, raycastTarget.up, raycastLenght, attackMask);
+                RaycastHit2D hit = Physics2D.Raycast(raycastTarget.position, raycastTarget.up, data.raycastLenght, attackMask);
                 if (oldHit)
                 {
                     if(oldHit.collider != hit.collider)
@@ -105,12 +99,15 @@ public class Weapon : MonoBehaviour
 
     void Shot()
     {
-        if(maxAmmo > 0)
+        if(curretAmmo > 0)
         {
             AttackAnim();
-            RaycastHit2D hit = Physics2D.Raycast(raycastTarget.position, creature.MyDirection(), raycastLenght, attackMask);
+
+            RaycastHit2D hit = Physics2D.Raycast(raycastTarget.position, creature.MyDirection(), data.raycastLenght, attackMask);
             RaycastAttack(hit);
-            maxAmmo--;
+            CreateShotTrail(hit);
+
+            curretAmmo--;
         }
         else
         {
@@ -121,6 +118,15 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    void CreateShotTrail(RaycastHit2D hit)
+    {
+        ShotTrail shotTrail = Instantiate(data.shotTrail, raycastTarget.position, Quaternion.identity).GetComponent<ShotTrail>();
+        if (hit)
+            shotTrail.SetTarget(hit.point);
+        else
+            shotTrail.SetTarget(creature.MyDirection() * 100);
+    }
+
     void RaycastAttack(RaycastHit2D hit)
     {
         if (hit)
@@ -129,7 +135,7 @@ public class Weapon : MonoBehaviour
 
             if (rb)
             {
-                rb.AddForce(creature.MyDirection() * force, ForceMode2D.Impulse);
+                rb.AddForce(creature.MyDirection() * data.force, ForceMode2D.Impulse);
             }
             if (hit.collider.GetComponent<AliveCreature>())
             {
@@ -148,7 +154,7 @@ public class Weapon : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawRay(raycastTarget.position, raycastTarget.up * raycastLenght);
+        Gizmos.DrawRay(raycastTarget.position, raycastTarget.up * data.raycastLenght);
     }
 
 #endif

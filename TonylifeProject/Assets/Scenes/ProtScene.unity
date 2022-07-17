@@ -1245,19 +1245,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 7057216801046267512, guid: 0fd85d48c414df0498449a6b86f7cd16, type: 3}
-  controller: {fileID: 22100000, guid: 5bd7d40be1877304ab0f4607ed19b6b0, type: 2}
+  data: {fileID: 11400000, guid: a0ec8068448020a468f97f0971b47ad6, type: 2}
   type: 0
-  delay: 0.5
-  damage: 50
-  force: 4
   raycastTarget: {fileID: 1652804836}
-  raycastLenght: 0.55
+  damage: 50
   attackMask:
     serializedVersion: 2
-    m_Bits: 1025
-  maxAmmo: 0
-  rechargeTime: 0
+    m_Bits: 1281
+  curretAmmo: 0
 --- !u!1 &294478114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,19 +1970,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 6908167311440026540, guid: 58142a5a883ee7f4d91484c090b6c354, type: 3}
-  controller: {fileID: 22100000, guid: 295c56d8027b0064ab481144a872e60b, type: 2}
+  data: {fileID: 11400000, guid: f40589c9b547f614cb509c05b9a3aabd, type: 2}
   type: 1
-  delay: 0.5
-  damage: 0
-  force: 2
   raycastTarget: {fileID: 1715972212}
-  raycastLenght: 100
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 6
-  rechargeTime: 0
+    m_Bits: 1281
+  curretAmmo: 0
 --- !u!1 &481865623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,7 +2234,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4087
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2267,6 +2257,7 @@ Transform:
   m_LocalPosition: {x: -1.43, y: 0.44899988, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1054222324}
   - {fileID: 831706672}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -3605,19 +3596,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 4272715021252803707, guid: 056f73e9a400a3042a502cf8549a602a, type: 3}
-  controller: {fileID: 22100000, guid: 2c5805e728bc20746b2f8427df9d9821, type: 2}
+  data: {fileID: 11400000, guid: 7e37fc932c74c0f4faa20092ba4be753, type: 2}
   type: 0
-  delay: 0.5
-  damage: 0
-  force: 2
   raycastTarget: {fileID: 373998184}
-  raycastLenght: 0.5
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 0
-  rechargeTime: 0
+    m_Bits: 1281
+  curretAmmo: 0
 --- !u!1 &831706671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3650,7 +3636,7 @@ RectTransform:
   m_Children:
   - {fileID: 68770996}
   m_Father: {fileID: 519420032}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4807,7 +4793,7 @@ Animator:
   m_GameObject: {fileID: 1023330749}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 2c5805e728bc20746b2f8427df9d9821, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0a380bd2d46849f4c8dfbe6a62a85855, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4929,6 +4915,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1054222323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054222324}
+  - component: {fileID: 1054222325}
+  m_Layer: 0
+  m_Name: FXCamera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1054222324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054222323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &1054222325
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054222323}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 4
+  m_BackGroundColor: {r: 0.48393556, g: 0.6141346, b: 0.8207547, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 20
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &1070415276
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,19 +5085,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 7625837112403919487, guid: 553c133a9ba0317408503bced87cf2a5, type: 3}
-  controller: {fileID: 22100000, guid: d43df5437faa2fd45b18cbd969d9e6fa, type: 2}
+  data: {fileID: 11400000, guid: 61871ba4e01aa1947b67180d85b358eb, type: 2}
   type: 1
-  delay: 0.1
-  damage: 0
-  force: 0.5
   raycastTarget: {fileID: 343245023}
-  raycastLenght: 100
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 30
-  rechargeTime: 0
+    m_Bits: 1281
+  curretAmmo: 0
 --- !u!1 &1129003699
 GameObject:
   m_ObjectHideFlags: 0
@@ -5992,19 +6047,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 6635307131265224290, guid: 1710f1ce47bc56d4fb05d7969ce479cf, type: 3}
-  controller: {fileID: 22100000, guid: 68f87d30c9b77614dae17e2615a8422b, type: 2}
+  data: {fileID: 11400000, guid: 0cd1a48f84f2ab8408927064ce04f146, type: 2}
   type: 1
-  delay: 0.3
-  damage: 25
-  force: 1
   raycastTarget: {fileID: 1965103399}
-  raycastLenght: 100
+  damage: 25
   attackMask:
     serializedVersion: 2
-    m_Bits: 1025
-  maxAmmo: 10
-  rechargeTime: 0
+    m_Bits: 1281
+  curretAmmo: 0
 --- !u!1 &1386148856
 GameObject:
   m_ObjectHideFlags: 0
@@ -8542,19 +8592,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 3530503180304758380, guid: 0a98149e684c64f41a550b793a14bd0b, type: 3}
-  controller: {fileID: 22100000, guid: 24cb3ebd44e7f1c4fa3b7f743ca92b3b, type: 2}
+  data: {fileID: 11400000, guid: e10547b2204066244a1d732eb0388a9e, type: 2}
   type: 1
-  delay: 1
-  damage: 0
-  force: 4
   raycastTarget: {fileID: 1894413740}
-  raycastLenght: 100
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 6
-  rechargeTime: 0
+    m_Bits: 1281
+  curretAmmo: 0
 --- !u!1 &2106324054
 GameObject:
   m_ObjectHideFlags: 0
@@ -9476,19 +9521,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 6908167311440026540, guid: 58142a5a883ee7f4d91484c090b6c354, type: 3}
-  controller: {fileID: 22100000, guid: 295c56d8027b0064ab481144a872e60b, type: 2}
+  data: {fileID: 11400000, guid: f40589c9b547f614cb509c05b9a3aabd, type: 2}
   type: 1
-  delay: 0.5
-  damage: 0
-  force: 2
   raycastTarget: {fileID: 1540454316086596838}
-  raycastLenght: 100
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 6
-  rechargeTime: 0
+    m_Bits: 385
+  curretAmmo: 0
 --- !u!1 &1540454314566465952
 GameObject:
   m_ObjectHideFlags: 0
@@ -9551,19 +9591,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 7057216801046267512, guid: 0fd85d48c414df0498449a6b86f7cd16, type: 3}
-  controller: {fileID: 22100000, guid: 5bd7d40be1877304ab0f4607ed19b6b0, type: 2}
+  data: {fileID: 11400000, guid: a0ec8068448020a468f97f0971b47ad6, type: 2}
   type: 0
-  delay: 0.5
-  damage: 0
-  force: 4
   raycastTarget: {fileID: 1540454316031832182}
-  raycastLenght: 0.55
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 0
-  rechargeTime: 0
+    m_Bits: 385
+  curretAmmo: 0
 --- !u!4 &1540454314643517046
 Transform:
   m_ObjectHideFlags: 0
@@ -9880,19 +9915,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 4272715021252803707, guid: 056f73e9a400a3042a502cf8549a602a, type: 3}
-  controller: {fileID: 22100000, guid: 2c5805e728bc20746b2f8427df9d9821, type: 2}
+  data: {fileID: 11400000, guid: 7e37fc932c74c0f4faa20092ba4be753, type: 2}
   type: 0
-  delay: 0.5
-  damage: 0
-  force: 2
   raycastTarget: {fileID: 1540454314743594746}
-  raycastLenght: 0.5
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 0
-  rechargeTime: 0
+    m_Bits: 385
+  curretAmmo: 0
 --- !u!1 &1540454314866291194
 GameObject:
   m_ObjectHideFlags: 0
@@ -10258,19 +10288,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 7625837112403919487, guid: 553c133a9ba0317408503bced87cf2a5, type: 3}
-  controller: {fileID: 22100000, guid: d43df5437faa2fd45b18cbd969d9e6fa, type: 2}
+  data: {fileID: 11400000, guid: 61871ba4e01aa1947b67180d85b358eb, type: 2}
   type: 1
-  delay: 0.1
-  damage: 0
-  force: 0.5
   raycastTarget: {fileID: 1540454314713889869}
-  raycastLenght: 100
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 30
-  rechargeTime: 0
+    m_Bits: 385
+  curretAmmo: 0
 --- !u!1 &1540454315138056510
 GameObject:
   m_ObjectHideFlags: 0
@@ -11090,19 +11115,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 6635307131265224290, guid: 1710f1ce47bc56d4fb05d7969ce479cf, type: 3}
-  controller: {fileID: 22100000, guid: 68f87d30c9b77614dae17e2615a8422b, type: 2}
+  data: {fileID: 11400000, guid: 0cd1a48f84f2ab8408927064ce04f146, type: 2}
   type: 1
-  delay: 0.3
-  damage: 0
-  force: 1
   raycastTarget: {fileID: 1540454316310635957}
-  raycastLenght: 100
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 10
-  rechargeTime: 0
+    m_Bits: 385
+  curretAmmo: 0
 --- !u!4 &1540454315736386220
 Transform:
   m_ObjectHideFlags: 0
@@ -11807,19 +11827,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aebb03005c120409ae17d0bde9d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 3530503180304758380, guid: 0a98149e684c64f41a550b793a14bd0b, type: 3}
-  controller: {fileID: 22100000, guid: 24cb3ebd44e7f1c4fa3b7f743ca92b3b, type: 2}
+  data: {fileID: 11400000, guid: e10547b2204066244a1d732eb0388a9e, type: 2}
   type: 1
-  delay: 1
-  damage: 0
-  force: 4
   raycastTarget: {fileID: 1540454316264048958}
-  raycastLenght: 100
+  damage: 0
   attackMask:
     serializedVersion: 2
-    m_Bits: 1
-  maxAmmo: 6
-  rechargeTime: 0
+    m_Bits: 385
+  curretAmmo: 0
 --- !u!4 &1540454316248114680
 Transform:
   m_ObjectHideFlags: 0

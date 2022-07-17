@@ -59,24 +59,24 @@ public class Player : AliveCreature
             {
                 if (closeIntObj.GetComponent<Item>().Ammo > 0)
                 {
-                    GameManager.instance.IndicatorWakeUp(closeIntObj.transform);
+                    GameManager.Instance.IndicatorWakeUp(closeIntObj.transform);
                     canUse = true;
                 }
                 else
                 {
-                    GameManager.instance.IndicatorSleep();
+                    GameManager.Instance.IndicatorSleep();
                     canUse = false;
                 }
             }
             else
             {
-                GameManager.instance.IndicatorWakeUp(closeIntObj.transform);
+                GameManager.Instance.IndicatorWakeUp(closeIntObj.transform);
                 canUse = true;
             }
         }
         else
         {
-            GameManager.instance.IndicatorSleep();
+            GameManager.Instance.IndicatorSleep();
             canUse = false;
         }
     }

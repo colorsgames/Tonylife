@@ -17,6 +17,7 @@ public class InteractiveObjectDetector : Detector
         {
             foreach (InteractiveObject item in allInteractiveObjects)
             {
+                if (!item) return;
                 RaycastHit2D hit = GetRaycastHit2D(item.transform.position);
                 if (!hit) return;
                 if (hit.collider.GetComponent<InteractiveObject>() == item)

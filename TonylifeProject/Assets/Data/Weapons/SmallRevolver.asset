@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e052e3a76950094cb3e809a048e69fd, type: 3}
+  m_Name: SmallRevolver
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 6908167311440026540, guid: 58142a5a883ee7f4d91484c090b6c354, type: 3}
+  shotTrail: {fileID: 2755097561236401669, guid: 18126fff9b842ec4aad144e8039b7a96, type: 3}
+  controller: {fileID: 22100000, guid: 295c56d8027b0064ab481144a872e60b, type: 2}
+  delay: 0.4
+  force: 3
+  raycastLenght: 100
+  maxAmmo: 6
+  rechargeTime: 0

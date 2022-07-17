@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    public static GameManager Instance { get { return instance; } }
+
+    private static GameManager instance;
 
     [SerializeField] private InteractivitiIndicatorController indicatorController;
 

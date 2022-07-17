@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e052e3a76950094cb3e809a048e69fd, type: 3}
+  m_Name: Hammer
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 7057216801046267512, guid: 0fd85d48c414df0498449a6b86f7cd16, type: 3}
+  controller: {fileID: 22100000, guid: 5bd7d40be1877304ab0f4607ed19b6b0, type: 2}
+  delay: 0.5
+  force: 2
+  raycastLenght: 0.55
+  maxAmmo: 0
+  rechargeTime: 0

@@ -94,10 +94,8 @@ public abstract class AliveCreature : MonoBehaviour
 
     protected void Movement(float hor)
     {
-        if (!alive)
-        {
-            hor = 0;
-        }
+        if (!alive) hor = 0;
+
         velocity = rb.velocity;
 
         if (!isGrounded())

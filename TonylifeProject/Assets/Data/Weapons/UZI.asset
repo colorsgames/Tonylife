@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e052e3a76950094cb3e809a048e69fd, type: 3}
+  m_Name: UZI
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 7625837112403919487, guid: 553c133a9ba0317408503bced87cf2a5, type: 3}
+  shotTrail: {fileID: 2755097561236401669, guid: 18126fff9b842ec4aad144e8039b7a96, type: 3}
+  controller: {fileID: 22100000, guid: d43df5437faa2fd45b18cbd969d9e6fa, type: 2}
+  delay: 0.15
+  force: 1
+  raycastLenght: 100
+  maxAmmo: 30
+  rechargeTime: 0

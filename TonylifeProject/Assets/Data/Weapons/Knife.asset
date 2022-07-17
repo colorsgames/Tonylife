@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e052e3a76950094cb3e809a048e69fd, type: 3}
+  m_Name: Knife
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 4272715021252803707, guid: 056f73e9a400a3042a502cf8549a602a, type: 3}
+  controller: {fileID: 22100000, guid: 2c5805e728bc20746b2f8427df9d9821, type: 2}
+  delay: 0.4
+  force: 2
+  raycastLenght: 0.5
+  maxAmmo: 0
+  rechargeTime: 0
