@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Pistol
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 6635307131265224290, guid: 1710f1ce47bc56d4fb05d7969ce479cf, type: 3}
+  bloodParticlePrefab: {fileID: 7257646383661021839, guid: a6ac0be32511c2942b552bfea763f4a9, type: 3}
+  shotParticlePrefab: {fileID: 6949399282344651512, guid: c9a6d2ff1ef8b7d4fbebe89594a8e7aa, type: 3}
   shotTrail: {fileID: 2755097561236401669, guid: 18126fff9b842ec4aad144e8039b7a96, type: 3}
   controller: {fileID: 22100000, guid: 68f87d30c9b77614dae17e2615a8422b, type: 2}
   delay: 0.3
   force: 2
   raycastLenght: 100
   maxAmmo: 10
-  rechargeTime: 0
+  rechargeTime: 1.2

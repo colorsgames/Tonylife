@@ -57,7 +57,7 @@ public class Inventory : MonoBehaviour
             if (i == id)
             {
                 items[i].gameObject.SetActive(true);
-                items[i].curretAmmo = item.Ammo;
+                items[i].SetAmmo(item.Ammo);
                 arms.runtimeAnimatorController = items[i].Controller;
             }
             else
@@ -85,7 +85,7 @@ public class Inventory : MonoBehaviour
         scale.x = dir.x;
         instTrans.localScale = scale;
 
-        rb.GetComponent<Item>().Ammo = items[takeItemId].curretAmmo;
+        rb.GetComponent<Item>().Ammo = items[takeItemId].GetAmmo();
         rb.AddForce(dir * dropForce, ForceMode2D.Impulse);
         rb.AddTorque(-dir.x * rotationForce, ForceMode2D.Impulse);
         items[takeItemId].gameObject.SetActive(false);

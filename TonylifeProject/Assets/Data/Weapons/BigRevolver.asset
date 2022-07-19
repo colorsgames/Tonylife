@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: BigRevolver
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 3530503180304758380, guid: 0a98149e684c64f41a550b793a14bd0b, type: 3}
+  bloodParticlePrefab: {fileID: 7257646383661021839, guid: a6ac0be32511c2942b552bfea763f4a9, type: 3}
+  shotParticlePrefab: {fileID: 6949399282344651512, guid: c9a6d2ff1ef8b7d4fbebe89594a8e7aa, type: 3}
   shotTrail: {fileID: 2755097561236401669, guid: 18126fff9b842ec4aad144e8039b7a96, type: 3}
   controller: {fileID: 22100000, guid: 24cb3ebd44e7f1c4fa3b7f743ca92b3b, type: 2}
   delay: 0.5
   force: 4
   raycastLenght: 100
   maxAmmo: 6
-  rechargeTime: 0
+  rechargeTime: 1.2

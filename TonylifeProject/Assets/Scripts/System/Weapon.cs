@@ -24,7 +24,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float damage;
     [SerializeField] private LayerMask attackMask;
 
-    [HideInInspector] public int curretAmmo;
+    private int curretAmmo;
+
+    private GameObject shotPart;
 
     private AliveCreature creature;
 
@@ -32,27 +34,38 @@ public class Weapon : MonoBehaviour
 
     private RaycastHit2D oldHit;
 
-    private float curretTime;
+    private float curretAttackTime;
+    private float curretRechargeTime;
 
     private bool canAttack;
+    private bool recharge;
 
 
     private void Start()
     {
         creature = GetComponentInParent<AliveCreature>();
         animator = GetComponentInParent<Animator>();
-        curretTime = data.delay;
+        curretAttackTime = data.delay;
         curretAmmo = data.maxAmmo;
+
+        if(WType == WeaponType.Guns)
+        {
+            shotPart = Instantiate(data.shotParticlePrefab, raycastTarget.position, Quaternion.identity);
+            shotPart.transform.parent = transform;
+            shotPart.transform.localRotation = Quaternion.Euler(0, 90, 0);
+            shotPart.transform.localScale = Vector3.one;
+            shotPart.SetActive(false);
+        }
     }
 
     private void Update()
     {
-        curretTime += Time.deltaTime;
-        if (curretTime > data.delay)
+        curretAttackTime += Time.deltaTime;
+        if (curretAttackTime > data.delay)
         {
             canAttack = true;
         }
-
+        Recharge();
     }
 
     private void FixedUpdate()
@@ -92,16 +105,28 @@ public class Weapon : MonoBehaviour
                 AttackAnim();
             }
 
-            curretTime = 0;
+            curretAttackTime = 0;
             canAttack = false;
         }
     }
+
+    public void StartRecharge()
+    {
+        recharge = true;
+        animator.SetTrigger("Recharge");
+    }
+
+    public int GetAmmo() { return curretAmmo; }
+    public bool GetRecharge() { return recharge; }
+    public void SetAmmo(int value) { curretAmmo = value; }
 
     void Shot()
     {
         if(curretAmmo > 0)
         {
             AttackAnim();
+
+            shotPart.SetActive(true);
 
             RaycastHit2D hit = Physics2D.Raycast(raycastTarget.position, creature.MyDirection(), data.raycastLenght, attackMask);
             RaycastAttack(hit);
@@ -114,6 +139,20 @@ public class Weapon : MonoBehaviour
             if (creature.GetComponent<Player>())
             {
                 creature.Drop();
+            }
+        }
+    }
+
+    void Recharge()
+    {
+        if (recharge)
+        {
+            curretRechargeTime += Time.deltaTime;
+            if (curretRechargeTime > data.rechargeTime)
+            {
+                curretAmmo = data.maxAmmo;
+                curretRechargeTime = 0;
+                recharge = false;
             }
         }
     }
@@ -137,9 +176,10 @@ public class Weapon : MonoBehaviour
             {
                 rb.AddForce(creature.MyDirection() * data.force, ForceMode2D.Impulse);
             }
-            if (hit.collider.GetComponent<AliveCreature>())
+            if (hit.collider.GetComponent<Limbs>())
             {
-                hit.collider.GetComponent<AliveCreature>().MakeDamage(damage);
+                hit.collider.GetComponent<Limbs>().MakeDamage(damage);
+                Instantiate(data.bloodParticlePrefab, hit.point, Quaternion.Euler(0,0, -90 * creature.MyDirection().x));
             }
         }
     }

@@ -43,6 +43,8 @@ public class Player : AliveCreature
         }
 
         DesignateInteractivity();
+
+        Rotate(hor);
     }
 
     private void FixedUpdate()

@@ -11,13 +11,18 @@ public abstract class NPC : AliveCreature
 
     [Header("Obstacle Detection")]
     [SerializeField] Transform obstaclesDetectionPoint;
-    [SerializeField] private float rayDistance;
+    [SerializeField] private float obstaclesRayDistance;
     [SerializeField] private float jumpDelay;
     [SerializeField] private LayerMask obstacles;
 
     [Header("Straying Settings")]
     [SerializeField] private float strayingRandomRadius;
     [SerializeField] private float changeRandomPosTime;
+
+    [Header("Attack Settings")]
+    [SerializeField] private float closeAttackDist;
+    [SerializeField] private float distantAttackDist;
+    [SerializeField] private LayerMask attackMask;
 
     private Transform target;
 
@@ -75,6 +80,7 @@ public abstract class NPC : AliveCreature
             GoTo(target.position, curretStopRadius);
         }
 
+        Attack();
         TakeItem();
 
         base.Update();
@@ -86,6 +92,36 @@ public abstract class NPC : AliveCreature
     {
         aggressive = aggressiveValue;
         this.target = target;
+    }
+
+    void Attack()
+    {
+        if (!aggressive) return;
+        if (curretWeapon)
+        {
+            if(curretWeapon.WType == Weapon.WeaponType.CloseWeapon)
+            {
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, MyDirection(), closeAttackDist, attackMask);
+                if (hit)
+                {
+                    curretWeapon.StartAttack();
+                }
+            }
+            else
+            {
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, MyDirection(), distantAttackDist, attackMask);
+                if (hit)
+                {
+                    curretWeapon.StartAttack();
+                }
+
+                if(curretWeapon.GetAmmo() <= 0)
+                {
+                    if(!curretWeapon.GetRecharge())
+                        curretWeapon.StartRecharge();
+                }
+            }
+        }
     }
 
     void TakeItem()
@@ -127,23 +163,11 @@ public abstract class NPC : AliveCreature
 
         Vector3 offset = target - transform.position;
 
-        if (offset.x < -0.1)
-        {
-            Rotate(-1f);
-        }
-        else if (offset.x > 0.1)
-        {
-            Rotate(1f);
-        }
+        if (offset.x < -0.1) { Rotate(-1f); }
+        else if (offset.x > 0.1) { Rotate(1f); }
 
-        if (offset.x < -stopRadius)
-        {
-            Movement(-1f);
-        }
-        else if (offset.x > stopRadius)
-        {
-            Movement(1f);
-        }
+        if (offset.x < -stopRadius) { Movement(-1f); }
+        else if (offset.x > stopRadius) { Movement(1f); }
         else
         {
             Movement(0f);
@@ -159,7 +183,7 @@ public abstract class NPC : AliveCreature
         curretJumpDelayTime += Time.deltaTime;
         if (curretJumpDelayTime > jumpDelay)
         {
-            RaycastHit2D hit = Physics2D.Raycast(obstaclesDetectionPoint.position, MyDirection(), rayDistance, obstacles);
+            RaycastHit2D hit = Physics2D.Raycast(obstaclesDetectionPoint.position, MyDirection(), obstaclesRayDistance, obstacles);
             if (hit)
             {
                 if (hit.transform.localScale.magnitude < 2.4f)
@@ -179,7 +203,7 @@ public abstract class NPC : AliveCreature
 
     protected override void OnDrawGizmos()
     {
-        Gizmos.DrawRay(obstaclesDetectionPoint.position, MyDirection() * rayDistance);
+        Gizmos.DrawRay(obstaclesDetectionPoint.position, MyDirection() * obstaclesRayDistance);
 
         base.OnDrawGizmos();
     }

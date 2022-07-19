@@ -121,8 +121,6 @@ public abstract class AliveCreature : MonoBehaviour
 
         velocity += Vector2.right * (newX - curretX);
 
-        Rotate(hor);
-
         MoveAnimation(hor);
 
         if (desiredJump)

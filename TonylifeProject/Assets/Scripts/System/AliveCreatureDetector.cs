@@ -20,6 +20,11 @@ public class AliveCreatureDetector : Detector
             {
                 discovered?.Invoke(creature);
             }
+            if (!creature.Alive)
+            {
+                creature = null;
+                discovered?.Invoke(creature);
+            }
         }
     }
 

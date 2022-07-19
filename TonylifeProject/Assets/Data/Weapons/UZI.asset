@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: UZI
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 7625837112403919487, guid: 553c133a9ba0317408503bced87cf2a5, type: 3}
+  bloodParticlePrefab: {fileID: 7257646383661021839, guid: a6ac0be32511c2942b552bfea763f4a9, type: 3}
+  shotParticlePrefab: {fileID: 6949399282344651512, guid: c9a6d2ff1ef8b7d4fbebe89594a8e7aa, type: 3}
   shotTrail: {fileID: 2755097561236401669, guid: 18126fff9b842ec4aad144e8039b7a96, type: 3}
   controller: {fileID: 22100000, guid: d43df5437faa2fd45b18cbd969d9e6fa, type: 2}
   delay: 0.15
   force: 1
   raycastLenght: 100
   maxAmmo: 30
-  rechargeTime: 0
+  rechargeTime: 1.2

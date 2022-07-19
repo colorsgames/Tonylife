@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Hammer
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 7057216801046267512, guid: 0fd85d48c414df0498449a6b86f7cd16, type: 3}
+  bloodParticlePrefab: {fileID: 7257646383661021839, guid: a6ac0be32511c2942b552bfea763f4a9, type: 3}
+  shotTrail: {fileID: 0}
   controller: {fileID: 22100000, guid: 5bd7d40be1877304ab0f4607ed19b6b0, type: 2}
   delay: 0.5
   force: 2
