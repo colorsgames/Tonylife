@@ -1,0 +1,3413 @@
+fileFormatVersion: 2
+guid: 42a1d76bd840e8840b4790afd615382c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: HalfWoodLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 220
+      width: 16
+      height: 8
+    spriteID: b37e5a745c1367e44ade8677e92a60d9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -471, y: -300}
+  - name: HalfWoodRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 145
+      y: 220
+      width: 16
+      height: 8
+    spriteID: 8cf692db856c2d54495030edcb385508
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -479, y: -300}
+  - name: HalfWoodMid
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 242
+      width: 16
+      height: 9
+    spriteID: 6f083b28d91e93945848823f9efd9e75
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -604, y: -277}
+  - name: WoodLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 4
+      width: 17
+      height: 16
+    spriteID: 445a81a43023ed64fb7f1549248c989e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -483, y: -540}
+  - name: WoodRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 133
+      y: 4
+      width: 17
+      height: 16
+    spriteID: ff6a55cc8252333448e12ee1a5f09665
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -490, y: -540}
+  - name: WoodMid
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 4
+      width: 17
+      height: 16
+    spriteID: 5dcf4b4f3b2b1a946a16e8b3b6250eba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -449, y: -540}
+  - name: DarkConcrete
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 3cfdf1be457cea14c82fab907239d78d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -409, y: -492}
+  - name: UglyWallDownRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 197
+      y: 196
+      width: 16
+      height: 14
+    spriteID: 6198c8aaf2ec9d649b12bc3eb7597272
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -267, y: -350}
+  - name: UglyWallDownLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 196
+      width: 17
+      height: 14
+    spriteID: e5f57aa48e3c0c247905b80d4295d3cf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -228, y: -350}
+  - name: UglyWallDown
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 196
+      width: 16
+      height: 14
+    spriteID: c108aa81ec609814fa0d249cb94dc2da
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -211, y: -350}
+  - name: UglyWallRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 4
+      width: 16
+      height: 16
+    spriteID: a143699abb830af4a993e7a402749641
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -257, y: -572}
+  - name: UglyWallLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 4
+      width: 16
+      height: 16
+    spriteID: f222d944ac249744a886ba9a6dfd49b4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -169, y: -572}
+  - name: UglyWallDestroyDown
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 169
+      y: 220
+      width: 16
+      height: 8
+    spriteID: f03525763aa73f24f913182512d72caf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -247, y: -260}
+  - name: UglyWallDestroyRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 245
+      y: 196
+      width: 7
+      height: 16
+    spriteID: 6e6fb3086030189429606094306c549b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -196, y: -300}
+  - name: UglyWallDestroyLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 28
+      width: 8
+      height: 16
+    spriteID: 3fe0a5799d588ea4584c2e4cd7be56ba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -156, y: -468}
+  - name: UglyWallDestroyUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 220
+      width: 16
+      height: 8
+    spriteID: b33fd98721809ad4db127cb07c0d87da
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -223, y: -300}
+  - name: UglyWallDestroyRightUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 28
+      width: 16
+      height: 16
+    spriteID: 5b3650441b453fd499dffeed1a93d4c6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -428, y: -484}
+  - name: UglyWallDestroyRightDown
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 28
+      width: 16
+      height: 16
+    spriteID: b29611c6510f4794d89bee70c0e31691
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -404, y: -452}
+  - name: UglyWallDestroyLeftDown
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 28
+      width: 16
+      height: 16
+    spriteID: f60a9a050954adf4e8c73333a37a9608
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -348, y: -452}
+  - name: UglyWallDestroyLeftUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 28
+      width: 16
+      height: 16
+    spriteID: 9e03b076e2492fe4c8f47930f432906d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -324, y: -484}
+  - name: UglyWallDestroyMid
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 28
+      width: 16
+      height: 16
+    spriteID: a9c64b271f5fa1c499b1b9cdc4f4855d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -332, y: -548}
+  - name: UglyWallDefaault
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 28
+      width: 16
+      height: 16
+    spriteID: 5bd21afeb55a871459bf39b77ad4adf5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -308, y: -580}
+  - name: GreenWall_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 28
+      width: 16
+      height: 16
+    spriteID: 0eb7df2d4fcc21b4b870ad138444e1cb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -348, y: -580}
+  - name: GreenWall_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 28
+      width: 16
+      height: 16
+    spriteID: 8d4ba7d24c79ca34b94ca16002263c12
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -324, y: -532}
+  - name: IronGridFenceUpLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 220
+      width: 16
+      height: 9
+    spriteID: 02dce690ca29516438934825ab5ad689
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -63, y: -171}
+  - name: IronGridFenceUpRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 220
+      width: 16
+      height: 9
+    spriteID: 0bf0ffe8085f2504090417d7f286e699
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -103, y: -171}
+  - name: IronGridFenceUpMid
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 220
+      width: 16
+      height: 9
+    spriteID: 144828c6d36187b488a1a1d79d0cc885
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -47, y: -171}
+  - name: IronGridFenceMid
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 28
+      width: 16
+      height: 16
+    spriteID: f421d1d07c5534b438885061ca439c4c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: -324}
+  - name: IronGridFenceDownMid
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 28
+      width: 16
+      height: 16
+    spriteID: 653663abd18140645a7da57f73ea74db
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 76, y: -292}
+  - name: IronGridFenceDownRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 4238b3fec33d4fb49b44b19e6f4e0f96
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -172, y: -268}
+  - name: IronGridFenceDownLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 52
+      width: 16
+      height: 16
+    spriteID: b4bb267e3f4900e4fb385a083bf46dcc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -84, y: -268}
+  - name: IronGridFenceLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 950234c80950be740a2c83cb0f5af099
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -60, y: -300}
+  - name: IronGridFenceRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 06867717c456d5146b6b1e54c266beba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -100, y: -300}
+  - name: LatticeFenceDownLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 52
+      width: 16
+      height: 16
+    spriteID: e26d0753ee5e42d4db7ad67c6920fff0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: -268}
+  - name: LatticeFenceDownRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 52
+      width: 16
+      height: 16
+    spriteID: a72dc4fb494f59743addc2a98bc643e9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 44, y: -268}
+  - name: LatticeFenceUpLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 217
+      y: 220
+      width: 16
+      height: 7
+    spriteID: f20f7220c6019dc4d956048e9cb73c12
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 169, y: -173}
+  - name: LatticeFenceUpRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 240
+      width: 16
+      height: 7
+    spriteID: 6f892dcc68ac63d47b275948b7798373
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -52, y: -153}
+  - name: LatticeFenceLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 875dcce857dc0b7498ffdff506808ec6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 100, y: -300}
+  - name: LatticeFanceRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 4a1fb5eed85ac014288f201f2f93b938
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 92, y: -300}
+  - name: IronTile
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 04c50ba11b2b5f941a654ae2a2bd7f76
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 180, y: -332}
+  - name: GrassDown
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 220
+      width: 16
+      height: 14
+    spriteID: 00d29e8e1247eda4293c5a56343ec7ce
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -492, y: -198}
+  - name: Grass
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 6b0378816f6d0af419e5f712450f2ed7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -276, y: -396}
+  - name: GrassMid
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 220
+      width: 13
+      height: 12
+    spriteID: 107ebca0f751fb441821d71afbedc1f6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -502, y: -230}
+  - name: ToiletTile
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 16
+      height: 16
+    spriteID: be8704290112e2a4791a2712c9a922ea
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -364, y: -532}
+  - name: RoofRedRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 76
+      width: 16
+      height: 16
+    spriteID: 9f08bb26231153f4186aaff6e54c647a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -468, y: -308}
+  - name: RoofRedRight_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 76
+      width: 16
+      height: 16
+    spriteID: 0d8d0ed1cfe13b44e90d810ddfc90f37
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -508, y: -308}
+  - name: RoofRedMid
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 76
+      width: 16
+      height: 16
+    spriteID: ab2731bc62a8dda43937b4aa6de28e65
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -452, y: -308}
+  - name: DesertEarthRedUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 76
+      width: 16
+      height: 16
+    spriteID: 63fb6f793f2de4f40bf6cc93b6c9d620
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 20, y: -500}
+  - name: DesertEarthGreyUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 76
+      width: 16
+      height: 16
+    spriteID: 1676ef873a9ea644994eadd1d9949a2b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 44, y: -532}
+  - name: DesertEarth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 76
+      width: 16
+      height: 16
+    spriteID: 3ded512002542124f84245949e0aaab8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 68, y: -468}
+  - name: UglyEarthGreyUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 76
+      width: 16
+      height: 16
+    spriteID: 79856a90a86baf4449148f78fe1a0d05
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 156, y: -532}
+  - name: UglyEarthRedUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 76
+      width: 16
+      height: 16
+    spriteID: e76ed90844ec9ea42a522f8763095f9e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 180, y: -500}
+  - name: UglyEarth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 76
+      width: 16
+      height: 16
+    spriteID: 3498f185f64b6aa4c9fb541b73fd587d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 204, y: -468}
+  - name: DarkEarthRedUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 16
+      height: 16
+    spriteID: 45bada3ef813e4a499e4bc417af075b0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -44, y: -476}
+  - name: DarkEartheGreyUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 100
+      width: 16
+      height: 16
+    spriteID: f053c129a0849c2478b6c5bcba13e238
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -20, y: -508}
+  - name: DarkEarth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 100
+      width: 16
+      height: 16
+    spriteID: 1d5682ccfe6a8cb489ece2e2b4260cd4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -444}
+  - name: BlueColumnUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 100
+      width: 16
+      height: 16
+    spriteID: 51d2608e89b8c6f4c9b030930fc4093d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -260, y: -348}
+  - name: DestroyDirtyBrickBlue
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 100
+      width: 16
+      height: 16
+    spriteID: 77d6799b5093b14459acb781ae3b7e50
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -236, y: -476}
+  - name: SpottedDirtyBrickBlue
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 100
+      width: 16
+      height: 16
+    spriteID: ed6ffd2e19bd43049961ef7456898e34
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -212, y: -508}
+  - name: DirtyBrickBlueInsideRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 100
+      width: 16
+      height: 16
+    spriteID: d9be7568a46a4ae4283c286606758d20
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -188, y: -380}
+  - name: DirtyBrickBlueRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 100
+      width: 16
+      height: 16
+    spriteID: 7bc79494753b1f14c9b7d64a619f9b1a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -164, y: -412}
+  - name: DirtyBrickBlueInsideLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 100
+      width: 16
+      height: 16
+    spriteID: c8402788ed6d19443b79a66af1e7e64c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -108, y: -380}
+  - name: DirtyBrickBlueLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 100
+      width: 16
+      height: 16
+    spriteID: 675ecdc75db2c3941a21c34716ddeb14
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -84, y: -412}
+  - name: DirtyBrickBlueColumn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 18
+      height: 16
+    spriteID: c9b90818b835da6449c76101cd5b9ebf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -331, y: -412}
+  - name: DirtyBrickBlue
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 124
+      width: 16
+      height: 16
+    spriteID: f6b9094c7b0bacb4ba4c95dc95811266
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -332, y: -420}
+  - name: DestroyBrickBlue
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 124
+      width: 16
+      height: 16
+    spriteID: af8dc42b758c4254caed370888bc8c6a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -276, y: -452}
+  - name: SpottedBrickBlue
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 124
+      width: 16
+      height: 16
+    spriteID: 034c6557f34591740ba542cf66eaf9f4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -252, y: -484}
+  - name: BrickBlue
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 124
+      width: 16
+      height: 16
+    spriteID: 040da46c9c9f4f1439b29b985242eace
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -228, y: -420}
+  - name: RedColumnUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 124
+      width: 16
+      height: 16
+    spriteID: ec1d4e0aa4263434cac647aaabeb319d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -172, y: -324}
+  - name: DestroyDirtyBrickRed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 124
+      width: 16
+      height: 16
+    spriteID: 82dabe72286b3e44a97db45fa07d6b9d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -148, y: -452}
+  - name: SpottedDirtyBrickRed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 124
+      width: 16
+      height: 16
+    spriteID: 16a3c46df684c464b84c83452aa9cecd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -124, y: -484}
+  - name: DirtyBrickRedInsideLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 124
+      width: 16
+      height: 16
+    spriteID: fbab5d7d057f5b545a4aff325be1f7e2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -68, y: -356}
+  - name: DirtyBrickRedLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 124
+      width: 16
+      height: 16
+    spriteID: e53e5f0138f5dfb459c571ebf9bdb4d4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -44, y: -388}
+  - name: DirtyBrickRedInsideRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 124
+      width: 16
+      height: 16
+    spriteID: 6feeb35702a631447b05a8326d0822e3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -52, y: -356}
+  - name: DirtyBrickRedRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 148
+      width: 16
+      height: 16
+    spriteID: bf61eb4c056143340870b466db2d1cd7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -268, y: -364}
+  - name: DirtyBrickRedColumn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 4
+      width: 18
+      height: 16
+    spriteID: 630e77a24ffb22747bf0c854fe0fea9c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -241, y: -412}
+  - name: DirtyBrickRed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 148
+      width: 16
+      height: 16
+    spriteID: a47c83e25e2fed447b5afc3a381f981f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -244, y: -396}
+  - name: DestroyBrickRed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 148
+      width: 16
+      height: 16
+    spriteID: db53ab4299e822147a9120533f4eed77
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -188, y: -428}
+  - name: SpottedBrickRed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 148
+      width: 16
+      height: 16
+    spriteID: 286633c4a9fe5894e91cc10d001dd6ba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -164, y: -460}
+  - name: BrickRed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 148
+      width: 16
+      height: 16
+    spriteID: 55ce3c1d8fc57d74c871d01e9244bf1b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -140, y: -396}
+  - name: DestroyBrickBeige
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 148
+      width: 16
+      height: 16
+    spriteID: 2578ffa6aa0789f47a12ae87b9d13a2d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 12, y: -428}
+  - name: SpottedBrickBeige
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 148
+      width: 16
+      height: 16
+    spriteID: 4d9ed88f94debee458e5ca1d7e5dfb42
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 36, y: -460}
+  - name: BrickBeige
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 148
+      width: 16
+      height: 16
+    spriteID: 58ac1667748eeb843a320636520a0ccc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 60, y: -396}
+  - name: DestroyDirtyBrickBeige
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 148
+      width: 16
+      height: 16
+    spriteID: cf3965c8844fb60418067ed9ef8137cb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: -428}
+  - name: SpottedDirtyBrickBeige
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 148
+      width: 16
+      height: 16
+    spriteID: 5883796c6b8e885458b8af9b780fd117
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 76, y: -460}
+  - name: DirtyBrickBeigeRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 172
+      width: 16
+      height: 16
+    spriteID: b790fe6749ed23749b32d6c7bdc15464
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -140, y: -340}
+  - name: DirtyBrickBeigeInsideLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 172
+      width: 16
+      height: 16
+    spriteID: 8bd3a9829892e8e43bdbbffa32a29709
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -84, y: -308}
+  - name: DirtyBrickBeigeLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 172
+      width: 16
+      height: 16
+    spriteID: 736098eae16dcfc4c8b30e8a5c73a8f5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -60, y: -340}
+  - name: BeigeColumnUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 172
+      width: 16
+      height: 16
+    spriteID: 9ca3513980169f44cb19c0cc62df6aea
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -68, y: -276}
+  - name: DirtyBrickBeigeInsideRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 172
+      width: 16
+      height: 16
+    spriteID: 7e7a72008d6f56e4bbd9ea4dfb55269b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -44, y: -308}
+  - name: DirtyBeigeColumn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 4
+      width: 18
+      height: 16
+    spriteID: 2a1d9ea6ef73c344e947cf9c1fb10748
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -87, y: -412}
+  - name: DirtyBrickBeige
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 172
+      width: 16
+      height: 16
+    spriteID: 8c4b93872aa31a3428f67a67cb0f36da
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -20, y: -372}
+  - name: RedAndGreyColumnUp
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 172
+      width: 16
+      height: 16
+    spriteID: 90f6ab3cf9d47ba459da1631902cc628
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -60, y: -276}
+  - name: DestroyDirtyBrickRedAndGrey
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 172
+      width: 16
+      height: 16
+    spriteID: fb02e151b7970b745990d41e29bbd1cd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -36, y: -404}
+  - name: SpottedDirtyBrickRedAndGrey
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 172
+      width: 16
+      height: 16
+    spriteID: 9469c58e91e42d44d836169938b8c58c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -12, y: -436}
+  - name: DirtyBrickRedAndGreyInsideLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 172
+      width: 16
+      height: 16
+    spriteID: 6c7bac8342e0a79489e6304761afbbe9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 44, y: -308}
+  - name: DirtyBrickRedAndGreyLeft
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 196
+      width: 16
+      height: 16
+    spriteID: 80df712c97e6c144eb2257a2ebe17d2a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -172, y: -316}
+  - name: DirtyBrickRedAndGreyInsideRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 196
+      width: 16
+      height: 16
+    spriteID: b308d5c94799f074f8a3773f3b319003
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -180, y: -284}
+  - name: DirtyBrickRedAndGreyRight
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 196
+      width: 16
+      height: 16
+    spriteID: 30701308fddf18f418da9ee825a2131a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -156, y: -316}
+  - name: DirtyBrickRedAndGreyColumn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 4
+      width: 18
+      height: 16
+    spriteID: fd13f422b8dcb8d459d0fd5837fa9028
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -125, y: -412}
+  - name: DirtyBrickRedAndGrey
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 196
+      width: 16
+      height: 16
+    spriteID: 2bb43839ad4e7ce4fad75f6e1e288c27
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -132, y: -348}
+  - name: DestroyBrickRedAndGrey
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 196
+      width: 16
+      height: 16
+    spriteID: bef0b2800c0aa87438f973bc8e61c1f1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -76, y: -380}
+  - name: SpottedBrickRedAndGrey
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 196
+      width: 16
+      height: 16
+    spriteID: 4c88408f35f26c9459b5292698d5d920
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -52, y: -412}
+  - name: BrickRedAndGrey
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 196
+      width: 16
+      height: 16
+    spriteID: 02808dc59c8e11845b8832478a64d94f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -28, y: -348}
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 256
+  importedTextureHeight: 256
+  documentSize: {x: 640, y: 640}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 256
+  textureActualHeight: 256
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Blocks
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 542
+    mosaicPosition: {x: 0, y: 0}
+  - name: Woods
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 541
+    mosaicPosition: {x: 0, y: 0}
+  - name: HalfWood_0
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 00000000000000000000000000000000
+    layerID: 540
+    mosaicPosition: {x: 0, y: 0}
+  - name: HalfWoodLeft
+    spriteName: HalfWoodLeft
+    isGroup: 0
+    parentIndex: 2
+    spriteID: b37e5a745c1367e44ade8677e92a60d9
+    layerID: 538
+    mosaicPosition: {x: 121, y: 220}
+  - name: HalfWoodRight
+    spriteName: HalfWoodRight
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 8cf692db856c2d54495030edcb385508
+    layerID: 531
+    mosaicPosition: {x: 145, y: 220}
+  - name: HalfWoodMid
+    spriteName: HalfWoodMid
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 6f083b28d91e93945848823f9efd9e75
+    layerID: 524
+    mosaicPosition: {x: 4, y: 242}
+  - name: Wood_0
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 00000000000000000000000000000000
+    layerID: 517
+    mosaicPosition: {x: 0, y: 0}
+  - name: WoodLeft
+    spriteName: WoodLeft
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 445a81a43023ed64fb7f1549248c989e
+    layerID: 515
+    mosaicPosition: {x: 108, y: 4}
+  - name: WoodRight
+    spriteName: WoodRight
+    isGroup: 0
+    parentIndex: 6
+    spriteID: ff6a55cc8252333448e12ee1a5f09665
+    layerID: 508
+    mosaicPosition: {x: 133, y: 4}
+  - name: WoodMid
+    spriteName: WoodMid
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 5dcf4b4f3b2b1a946a16e8b3b6250eba
+    layerID: 501
+    mosaicPosition: {x: 158, y: 4}
+  - name: Concrets
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 493
+    mosaicPosition: {x: 0, y: 0}
+  - name: DarkConcrete
+    spriteName: DarkConcrete
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 3cfdf1be457cea14c82fab907239d78d
+    layerID: 492
+    mosaicPosition: {x: 183, y: 4}
+  - name: UglyWalls
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 490
+    mosaicPosition: {x: 0, y: 0}
+  - name: UglyWall_0
+    spriteName: 
+    isGroup: 1
+    parentIndex: 12
+    spriteID: 00000000000000000000000000000000
+    layerID: 489
+    mosaicPosition: {x: 0, y: 0}
+  - name: UglyWallDownRight
+    spriteName: UglyWallDownRight
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 6198c8aaf2ec9d649b12bc3eb7597272
+    layerID: 488
+    mosaicPosition: {x: 197, y: 196}
+  - name: UglyWallDownLeft
+    spriteName: UglyWallDownLeft
+    isGroup: 0
+    parentIndex: 13
+    spriteID: e5f57aa48e3c0c247905b80d4295d3cf
+    layerID: 487
+    mosaicPosition: {x: 172, y: 196}
+  - name: UglyWallDown
+    spriteName: UglyWallDown
+    isGroup: 0
+    parentIndex: 13
+    spriteID: c108aa81ec609814fa0d249cb94dc2da
+    layerID: 486
+    mosaicPosition: {x: 221, y: 196}
+  - name: UglyWallRight
+    spriteName: UglyWallRight
+    isGroup: 0
+    parentIndex: 13
+    spriteID: a143699abb830af4a993e7a402749641
+    layerID: 485
+    mosaicPosition: {x: 207, y: 4}
+  - name: UglyWallLeft
+    spriteName: UglyWallLeft
+    isGroup: 0
+    parentIndex: 13
+    spriteID: f222d944ac249744a886ba9a6dfd49b4
+    layerID: 484
+    mosaicPosition: {x: 231, y: 4}
+  - name: Destroyed
+    spriteName: 
+    isGroup: 1
+    parentIndex: 13
+    spriteID: 00000000000000000000000000000000
+    layerID: 483
+    mosaicPosition: {x: 0, y: 0}
+  - name: UglyWallDestroyDown
+    spriteName: UglyWallDestroyDown
+    isGroup: 0
+    parentIndex: 19
+    spriteID: f03525763aa73f24f913182512d72caf
+    layerID: 482
+    mosaicPosition: {x: 169, y: 220}
+  - name: UglyWallDestroyRight
+    spriteName: UglyWallDestroyRight
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 6e6fb3086030189429606094306c549b
+    layerID: 481
+    mosaicPosition: {x: 245, y: 196}
+  - name: UglyWallDestroyLeft
+    spriteName: UglyWallDestroyLeft
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 3fe0a5799d588ea4584c2e4cd7be56ba
+    layerID: 480
+    mosaicPosition: {x: 244, y: 28}
+  - name: UglyWallDestroyUp
+    spriteName: UglyWallDestroyUp
+    isGroup: 0
+    parentIndex: 19
+    spriteID: b33fd98721809ad4db127cb07c0d87da
+    layerID: 479
+    mosaicPosition: {x: 193, y: 220}
+  - name: UglyWallDestroyRightUp
+    spriteName: UglyWallDestroyRightUp
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 5b3650441b453fd499dffeed1a93d4c6
+    layerID: 478
+    mosaicPosition: {x: 4, y: 28}
+  - name: UglyWallDestroyRightDown
+    spriteName: UglyWallDestroyRightDown
+    isGroup: 0
+    parentIndex: 19
+    spriteID: b29611c6510f4794d89bee70c0e31691
+    layerID: 477
+    mosaicPosition: {x: 28, y: 28}
+  - name: UglyWallDestroyLeftDown
+    spriteName: UglyWallDestroyLeftDown
+    isGroup: 0
+    parentIndex: 19
+    spriteID: f60a9a050954adf4e8c73333a37a9608
+    layerID: 476
+    mosaicPosition: {x: 52, y: 28}
+  - name: UglyWallDestroyLeftUp
+    spriteName: UglyWallDestroyLeftUp
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 9e03b076e2492fe4c8f47930f432906d
+    layerID: 475
+    mosaicPosition: {x: 76, y: 28}
+  - name: UglyWallDestroyMid
+    spriteName: UglyWallDestroyMid
+    isGroup: 0
+    parentIndex: 19
+    spriteID: a9c64b271f5fa1c499b1b9cdc4f4855d
+    layerID: 474
+    mosaicPosition: {x: 100, y: 28}
+  - name: UglyWallDefaault
+    spriteName: UglyWallDefaault
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 5bd21afeb55a871459bf39b77ad4adf5
+    layerID: 472
+    mosaicPosition: {x: 124, y: 28}
+  - name: UglyWall_1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 12
+    spriteID: 00000000000000000000000000000000
+    layerID: 470
+    mosaicPosition: {x: 0, y: 0}
+  - name: Mid
+    spriteName: 
+    isGroup: 1
+    parentIndex: 30
+    spriteID: 00000000000000000000000000000000
+    layerID: 469
+    mosaicPosition: {x: 0, y: 0}
+  - name: GreenWall_0
+    spriteName: GreenWall_0
+    isGroup: 0
+    parentIndex: 31
+    spriteID: 0eb7df2d4fcc21b4b870ad138444e1cb
+    layerID: 468
+    mosaicPosition: {x: 148, y: 28}
+  - name: GreenWall_1
+    spriteName: GreenWall_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 8d4ba7d24c79ca34b94ca16002263c12
+    layerID: 464
+    mosaicPosition: {x: 172, y: 28}
+  - name: IronGridFence
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 450
+    mosaicPosition: {x: 0, y: 0}
+  - name: IronGridFenceUpLeft
+    spriteName: IronGridFenceUpLeft
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 02dce690ca29516438934825ab5ad689
+    layerID: 461
+    mosaicPosition: {x: 49, y: 220}
+  - name: IronGridFenceUpRight
+    spriteName: IronGridFenceUpRight
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 0bf0ffe8085f2504090417d7f286e699
+    layerID: 457
+    mosaicPosition: {x: 73, y: 220}
+  - name: IronGridFenceUpMid
+    spriteName: IronGridFenceUpMid
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 144828c6d36187b488a1a1d79d0cc885
+    layerID: 453
+    mosaicPosition: {x: 97, y: 220}
+  - name: IronGridFenceMid
+    spriteName: IronGridFenceMid
+    isGroup: 0
+    parentIndex: 34
+    spriteID: f421d1d07c5534b438885061ca439c4c
+    layerID: 449
+    mosaicPosition: {x: 196, y: 28}
+  - name: IronGridFenceDownMid
+    spriteName: IronGridFenceDownMid
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 653663abd18140645a7da57f73ea74db
+    layerID: 447
+    mosaicPosition: {x: 220, y: 28}
+  - name: IronGridFenceDownRight
+    spriteName: IronGridFenceDownRight
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 4238b3fec33d4fb49b44b19e6f4e0f96
+    layerID: 443
+    mosaicPosition: {x: 4, y: 52}
+  - name: IronGridFenceDownLeft
+    spriteName: IronGridFenceDownLeft
+    isGroup: 0
+    parentIndex: 34
+    spriteID: b4bb267e3f4900e4fb385a083bf46dcc
+    layerID: 439
+    mosaicPosition: {x: 28, y: 52}
+  - name: IronGridFenceLeft
+    spriteName: IronGridFenceLeft
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 950234c80950be740a2c83cb0f5af099
+    layerID: 435
+    mosaicPosition: {x: 52, y: 52}
+  - name: IronGridFenceRight
+    spriteName: IronGridFenceRight
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 06867717c456d5146b6b1e54c266beba
+    layerID: 431
+    mosaicPosition: {x: 76, y: 52}
+  - name: IronLatticeFence
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 427
+    mosaicPosition: {x: 0, y: 0}
+  - name: LatticeFenceDownLeft
+    spriteName: LatticeFenceDownLeft
+    isGroup: 0
+    parentIndex: 44
+    spriteID: e26d0753ee5e42d4db7ad67c6920fff0
+    layerID: 425
+    mosaicPosition: {x: 100, y: 52}
+  - name: LatticeFenceDownRight
+    spriteName: LatticeFenceDownRight
+    isGroup: 0
+    parentIndex: 44
+    spriteID: a72dc4fb494f59743addc2a98bc643e9
+    layerID: 421
+    mosaicPosition: {x: 124, y: 52}
+  - name: LatticeFenceUpLeft
+    spriteName: LatticeFenceUpLeft
+    isGroup: 0
+    parentIndex: 44
+    spriteID: f20f7220c6019dc4d956048e9cb73c12
+    layerID: 417
+    mosaicPosition: {x: 217, y: 220}
+  - name: LatticeFenceUpRight
+    spriteName: LatticeFenceUpRight
+    isGroup: 0
+    parentIndex: 44
+    spriteID: 6f892dcc68ac63d47b275948b7798373
+    layerID: 413
+    mosaicPosition: {x: 28, y: 240}
+  - name: LatticeFenceLeft
+    spriteName: LatticeFenceLeft
+    isGroup: 0
+    parentIndex: 44
+    spriteID: 875dcce857dc0b7498ffdff506808ec6
+    layerID: 409
+    mosaicPosition: {x: 148, y: 52}
+  - name: LatticeFanceRight
+    spriteName: LatticeFanceRight
+    isGroup: 0
+    parentIndex: 44
+    spriteID: 4a1fb5eed85ac014288f201f2f93b938
+    layerID: 405
+    mosaicPosition: {x: 172, y: 52}
+  - name: IronTils
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 401
+    mosaicPosition: {x: 0, y: 0}
+  - name: IronTile
+    spriteName: IronTile
+    isGroup: 0
+    parentIndex: 51
+    spriteID: 04c50ba11b2b5f941a654ae2a2bd7f76
+    layerID: 400
+    mosaicPosition: {x: 196, y: 52}
+  - name: Grass
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 395
+    mosaicPosition: {x: 0, y: 0}
+  - name: GrassDown
+    spriteName: GrassDown
+    isGroup: 0
+    parentIndex: 53
+    spriteID: 00d29e8e1247eda4293c5a56343ec7ce
+    layerID: 394
+    mosaicPosition: {x: 4, y: 220}
+  - name: Grass
+    spriteName: Grass
+    isGroup: 0
+    parentIndex: 53
+    spriteID: 6b0378816f6d0af419e5f712450f2ed7
+    layerID: 393
+    mosaicPosition: {x: 220, y: 52}
+  - name: GrassMid
+    spriteName: GrassMid
+    isGroup: 0
+    parentIndex: 53
+    spriteID: 107ebca0f751fb441821d71afbedc1f6
+    layerID: 392
+    mosaicPosition: {x: 28, y: 220}
+  - name: Tile
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 390
+    mosaicPosition: {x: 0, y: 0}
+  - name: ToiletTile
+    spriteName: ToiletTile
+    isGroup: 0
+    parentIndex: 57
+    spriteID: be8704290112e2a4791a2712c9a922ea
+    layerID: 389
+    mosaicPosition: {x: 4, y: 76}
+  - name: Roofs
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 544
+    mosaicPosition: {x: 0, y: 0}
+  - name: RedRoof
+    spriteName: 
+    isGroup: 1
+    parentIndex: 59
+    spriteID: 00000000000000000000000000000000
+    layerID: 384
+    mosaicPosition: {x: 0, y: 0}
+  - name: RoofRedRight
+    spriteName: RoofRedRight
+    isGroup: 0
+    parentIndex: 60
+    spriteID: 9f08bb26231153f4186aaff6e54c647a
+    layerID: 382
+    mosaicPosition: {x: 28, y: 76}
+  - name: RoofRedRight
+    spriteName: RoofRedRight_1
+    isGroup: 0
+    parentIndex: 60
+    spriteID: 0d8d0ed1cfe13b44e90d810ddfc90f37
+    layerID: 376
+    mosaicPosition: {x: 52, y: 76}
+  - name: RoofRedMid
+    spriteName: RoofRedMid
+    isGroup: 0
+    parentIndex: 60
+    spriteID: ab2731bc62a8dda43937b4aa6de28e65
+    layerID: 370
+    mosaicPosition: {x: 76, y: 76}
+  - name: Earths
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 364
+    mosaicPosition: {x: 0, y: 0}
+  - name: DesertEarth
+    spriteName: 
+    isGroup: 1
+    parentIndex: 64
+    spriteID: 00000000000000000000000000000000
+    layerID: 363
+    mosaicPosition: {x: 0, y: 0}
+  - name: DesertEarthRedUp
+    spriteName: DesertEarthRedUp
+    isGroup: 0
+    parentIndex: 65
+    spriteID: 63fb6f793f2de4f40bf6cc93b6c9d620
+    layerID: 361
+    mosaicPosition: {x: 100, y: 76}
+  - name: DesertEarthGreyUp
+    spriteName: DesertEarthGreyUp
+    isGroup: 0
+    parentIndex: 65
+    spriteID: 1676ef873a9ea644994eadd1d9949a2b
+    layerID: 354
+    mosaicPosition: {x: 124, y: 76}
+  - name: DesertEarth
+    spriteName: DesertEarth
+    isGroup: 0
+    parentIndex: 65
+    spriteID: 3ded512002542124f84245949e0aaab8
+    layerID: 347
+    mosaicPosition: {x: 148, y: 76}
+  - name: UglyEarth
+    spriteName: 
+    isGroup: 1
+    parentIndex: 64
+    spriteID: 00000000000000000000000000000000
+    layerID: 341
+    mosaicPosition: {x: 0, y: 0}
+  - name: UglyEarthGreyUp
+    spriteName: UglyEarthGreyUp
+    isGroup: 0
+    parentIndex: 69
+    spriteID: 79856a90a86baf4449148f78fe1a0d05
+    layerID: 340
+    mosaicPosition: {x: 172, y: 76}
+  - name: UglyEarthRedUp
+    spriteName: UglyEarthRedUp
+    isGroup: 0
+    parentIndex: 69
+    spriteID: e76ed90844ec9ea42a522f8763095f9e
+    layerID: 339
+    mosaicPosition: {x: 196, y: 76}
+  - name: UglyEarth
+    spriteName: UglyEarth
+    isGroup: 0
+    parentIndex: 69
+    spriteID: 3498f185f64b6aa4c9fb541b73fd587d
+    layerID: 338
+    mosaicPosition: {x: 220, y: 76}
+  - name: DarkEarth
+    spriteName: 
+    isGroup: 1
+    parentIndex: 64
+    spriteID: 00000000000000000000000000000000
+    layerID: 336
+    mosaicPosition: {x: 0, y: 0}
+  - name: DarkEarthRedUp
+    spriteName: DarkEarthRedUp
+    isGroup: 0
+    parentIndex: 73
+    spriteID: 45bada3ef813e4a499e4bc417af075b0
+    layerID: 334
+    mosaicPosition: {x: 4, y: 100}
+  - name: DarkEartheGreyUp
+    spriteName: DarkEartheGreyUp
+    isGroup: 0
+    parentIndex: 73
+    spriteID: f053c129a0849c2478b6c5bcba13e238
+    layerID: 330
+    mosaicPosition: {x: 28, y: 100}
+  - name: DarkEarth
+    spriteName: DarkEarth
+    isGroup: 0
+    parentIndex: 73
+    spriteID: 1d5682ccfe6a8cb489ece2e2b4260cd4
+    layerID: 327
+    mosaicPosition: {x: 52, y: 100}
+  - name: Bricks
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 324
+    mosaicPosition: {x: 0, y: 0}
+  - name: BrickBlue
+    spriteName: 
+    isGroup: 1
+    parentIndex: 77
+    spriteID: 00000000000000000000000000000000
+    layerID: 323
+    mosaicPosition: {x: 0, y: 0}
+  - name: BrickBlueDirty
+    spriteName: 
+    isGroup: 1
+    parentIndex: 78
+    spriteID: 00000000000000000000000000000000
+    layerID: 322
+    mosaicPosition: {x: 0, y: 0}
+  - name: BlueColumnUp
+    spriteName: BlueColumnUp
+    isGroup: 0
+    parentIndex: 79
+    spriteID: 51d2608e89b8c6f4c9b030930fc4093d
+    layerID: 320
+    mosaicPosition: {x: 76, y: 100}
+  - name: DestroyDirtyBrickBlue
+    spriteName: DestroyDirtyBrickBlue
+    isGroup: 0
+    parentIndex: 79
+    spriteID: 77d6799b5093b14459acb781ae3b7e50
+    layerID: 314
+    mosaicPosition: {x: 100, y: 100}
+  - name: SpottedDirtyBrickBlue
+    spriteName: SpottedDirtyBrickBlue
+    isGroup: 0
+    parentIndex: 79
+    spriteID: ed6ffd2e19bd43049961ef7456898e34
+    layerID: 308
+    mosaicPosition: {x: 124, y: 100}
+  - name: DirtyBrickBlueInsideRight
+    spriteName: DirtyBrickBlueInsideRight
+    isGroup: 0
+    parentIndex: 79
+    spriteID: d9be7568a46a4ae4283c286606758d20
+    layerID: 301
+    mosaicPosition: {x: 148, y: 100}
+  - name: DirtyBrickBlueRight
+    spriteName: DirtyBrickBlueRight
+    isGroup: 0
+    parentIndex: 79
+    spriteID: 7bc79494753b1f14c9b7d64a619f9b1a
+    layerID: 295
+    mosaicPosition: {x: 172, y: 100}
+  - name: DirtyBrickBlueInsideLeft
+    spriteName: DirtyBrickBlueInsideLeft
+    isGroup: 0
+    parentIndex: 79
+    spriteID: c8402788ed6d19443b79a66af1e7e64c
+    layerID: 289
+    mosaicPosition: {x: 196, y: 100}
+  - name: DirtyBrickBlueLeft
+    spriteName: DirtyBrickBlueLeft
+    isGroup: 0
+    parentIndex: 79
+    spriteID: 675ecdc75db2c3941a21c34716ddeb14
+    layerID: 283
+    mosaicPosition: {x: 220, y: 100}
+  - name: DirtyBrickBlueColumn
+    spriteName: DirtyBrickBlueColumn
+    isGroup: 0
+    parentIndex: 79
+    spriteID: c9b90818b835da6449c76101cd5b9ebf
+    layerID: 277
+    mosaicPosition: {x: 4, y: 4}
+  - name: DirtyBrickBlue
+    spriteName: DirtyBrickBlue
+    isGroup: 0
+    parentIndex: 79
+    spriteID: f6b9094c7b0bacb4ba4c95dc95811266
+    layerID: 271
+    mosaicPosition: {x: 4, y: 124}
+  - name: BrickBlueDefault
+    spriteName: 
+    isGroup: 1
+    parentIndex: 78
+    spriteID: 00000000000000000000000000000000
+    layerID: 265
+    mosaicPosition: {x: 0, y: 0}
+  - name: DestroyBrickBlue
+    spriteName: DestroyBrickBlue
+    isGroup: 0
+    parentIndex: 89
+    spriteID: af8dc42b758c4254caed370888bc8c6a
+    layerID: 263
+    mosaicPosition: {x: 28, y: 124}
+  - name: SpottedBrickBlue
+    spriteName: SpottedBrickBlue
+    isGroup: 0
+    parentIndex: 89
+    spriteID: 034c6557f34591740ba542cf66eaf9f4
+    layerID: 257
+    mosaicPosition: {x: 52, y: 124}
+  - name: BrickBlue
+    spriteName: BrickBlue
+    isGroup: 0
+    parentIndex: 89
+    spriteID: 040da46c9c9f4f1439b29b985242eace
+    layerID: 250
+    mosaicPosition: {x: 76, y: 124}
+  - name: BrickRedAndRedCircuit
+    spriteName: 
+    isGroup: 1
+    parentIndex: 77
+    spriteID: 00000000000000000000000000000000
+    layerID: 243
+    mosaicPosition: {x: 0, y: 0}
+  - name: BrickDirtyRed
+    spriteName: 
+    isGroup: 1
+    parentIndex: 93
+    spriteID: 00000000000000000000000000000000
+    layerID: 242
+    mosaicPosition: {x: 0, y: 0}
+  - name: RedColumnUp
+    spriteName: RedColumnUp
+    isGroup: 0
+    parentIndex: 94
+    spriteID: ec1d4e0aa4263434cac647aaabeb319d
+    layerID: 240
+    mosaicPosition: {x: 100, y: 124}
+  - name: DestroyDirtyBrickRed
+    spriteName: DestroyDirtyBrickRed
+    isGroup: 0
+    parentIndex: 94
+    spriteID: 82dabe72286b3e44a97db45fa07d6b9d
+    layerID: 234
+    mosaicPosition: {x: 124, y: 124}
+  - name: SpottedDirtyBrickRed
+    spriteName: SpottedDirtyBrickRed
+    isGroup: 0
+    parentIndex: 94
+    spriteID: 16a3c46df684c464b84c83452aa9cecd
+    layerID: 228
+    mosaicPosition: {x: 148, y: 124}
+  - name: DirtyBrickRedInsideLeft
+    spriteName: DirtyBrickRedInsideLeft
+    isGroup: 0
+    parentIndex: 94
+    spriteID: fbab5d7d057f5b545a4aff325be1f7e2
+    layerID: 221
+    mosaicPosition: {x: 172, y: 124}
+  - name: DirtyBrickRedLeft
+    spriteName: DirtyBrickRedLeft
+    isGroup: 0
+    parentIndex: 94
+    spriteID: e53e5f0138f5dfb459c571ebf9bdb4d4
+    layerID: 215
+    mosaicPosition: {x: 196, y: 124}
+  - name: DirtyBrickRedInsideRight
+    spriteName: DirtyBrickRedInsideRight
+    isGroup: 0
+    parentIndex: 94
+    spriteID: 6feeb35702a631447b05a8326d0822e3
+    layerID: 209
+    mosaicPosition: {x: 220, y: 124}
+  - name: DirtyBrickRedRight
+    spriteName: DirtyBrickRedRight
+    isGroup: 0
+    parentIndex: 94
+    spriteID: bf61eb4c056143340870b466db2d1cd7
+    layerID: 203
+    mosaicPosition: {x: 4, y: 148}
+  - name: DirtyBrickRedColumn
+    spriteName: DirtyBrickRedColumn
+    isGroup: 0
+    parentIndex: 94
+    spriteID: 630e77a24ffb22747bf0c854fe0fea9c
+    layerID: 197
+    mosaicPosition: {x: 30, y: 4}
+  - name: DirtyBrickRed
+    spriteName: DirtyBrickRed
+    isGroup: 0
+    parentIndex: 94
+    spriteID: a47c83e25e2fed447b5afc3a381f981f
+    layerID: 191
+    mosaicPosition: {x: 28, y: 148}
+  - name: BrickRed
+    spriteName: 
+    isGroup: 1
+    parentIndex: 93
+    spriteID: 00000000000000000000000000000000
+    layerID: 185
+    mosaicPosition: {x: 0, y: 0}
+  - name: DestroyBrickRed
+    spriteName: DestroyBrickRed
+    isGroup: 0
+    parentIndex: 104
+    spriteID: db53ab4299e822147a9120533f4eed77
+    layerID: 183
+    mosaicPosition: {x: 52, y: 148}
+  - name: SpottedBrickRed
+    spriteName: SpottedBrickRed
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 286633c4a9fe5894e91cc10d001dd6ba
+    layerID: 177
+    mosaicPosition: {x: 76, y: 148}
+  - name: BrickRed
+    spriteName: BrickRed
+    isGroup: 0
+    parentIndex: 104
+    spriteID: 55ce3c1d8fc57d74c871d01e9244bf1b
+    layerID: 170
+    mosaicPosition: {x: 100, y: 148}
+  - name: BrickBeige
+    spriteName: 
+    isGroup: 1
+    parentIndex: 77
+    spriteID: 00000000000000000000000000000000
+    layerID: 26
+    mosaicPosition: {x: 0, y: 0}
+  - name: DestroyBrickBeige
+    spriteName: DestroyBrickBeige
+    isGroup: 0
+    parentIndex: 108
+    spriteID: 2578ffa6aa0789f47a12ae87b9d13a2d
+    layerID: 24
+    mosaicPosition: {x: 124, y: 148}
+  - name: SpottedBrickBeige
+    spriteName: SpottedBrickBeige
+    isGroup: 0
+    parentIndex: 108
+    spriteID: 4d9ed88f94debee458e5ca1d7e5dfb42
+    layerID: 18
+    mosaicPosition: {x: 148, y: 148}
+  - name: BrickBeige
+    spriteName: BrickBeige
+    isGroup: 0
+    parentIndex: 108
+    spriteID: 58ac1667748eeb843a320636520a0ccc
+    layerID: 11
+    mosaicPosition: {x: 172, y: 148}
+  - name: BrickDirtyBeige
+    spriteName: 
+    isGroup: 1
+    parentIndex: 77
+    spriteID: 00000000000000000000000000000000
+    layerID: 163
+    mosaicPosition: {x: 0, y: 0}
+  - name: DestroyDirtyBrickBeige
+    spriteName: DestroyDirtyBrickBeige
+    isGroup: 0
+    parentIndex: 112
+    spriteID: cf3965c8844fb60418067ed9ef8137cb
+    layerID: 161
+    mosaicPosition: {x: 196, y: 148}
+  - name: SpottedDirtyBrickBeige
+    spriteName: SpottedDirtyBrickBeige
+    isGroup: 0
+    parentIndex: 112
+    spriteID: 5883796c6b8e885458b8af9b780fd117
+    layerID: 155
+    mosaicPosition: {x: 220, y: 148}
+  - name: DirtyBrickBeigeRight
+    spriteName: DirtyBrickBeigeRight
+    isGroup: 0
+    parentIndex: 112
+    spriteID: b790fe6749ed23749b32d6c7bdc15464
+    layerID: 148
+    mosaicPosition: {x: 4, y: 172}
+  - name: DirtyBrickBeigeInsideLeft
+    spriteName: DirtyBrickBeigeInsideLeft
+    isGroup: 0
+    parentIndex: 112
+    spriteID: 8bd3a9829892e8e43bdbbffa32a29709
+    layerID: 142
+    mosaicPosition: {x: 28, y: 172}
+  - name: DirtyBrickBeigeLeft
+    spriteName: DirtyBrickBeigeLeft
+    isGroup: 0
+    parentIndex: 112
+    spriteID: 736098eae16dcfc4c8b30e8a5c73a8f5
+    layerID: 136
+    mosaicPosition: {x: 52, y: 172}
+  - name: BeigeColumnUp
+    spriteName: BeigeColumnUp
+    isGroup: 0
+    parentIndex: 112
+    spriteID: 9ca3513980169f44cb19c0cc62df6aea
+    layerID: 130
+    mosaicPosition: {x: 76, y: 172}
+  - name: DirtyBrickBeigeInsideRight
+    spriteName: DirtyBrickBeigeInsideRight
+    isGroup: 0
+    parentIndex: 112
+    spriteID: 7e7a72008d6f56e4bbd9ea4dfb55269b
+    layerID: 124
+    mosaicPosition: {x: 100, y: 172}
+  - name: DirtyBeigeColumn
+    spriteName: DirtyBeigeColumn
+    isGroup: 0
+    parentIndex: 112
+    spriteID: 2a1d9ea6ef73c344e947cf9c1fb10748
+    layerID: 118
+    mosaicPosition: {x: 56, y: 4}
+  - name: DirtyBrickBeige
+    spriteName: DirtyBrickBeige
+    isGroup: 0
+    parentIndex: 112
+    spriteID: 8c4b93872aa31a3428f67a67cb0f36da
+    layerID: 112
+    mosaicPosition: {x: 124, y: 172}
+  - name: BrickRedAndGreyCircuit
+    spriteName: 
+    isGroup: 1
+    parentIndex: 77
+    spriteID: 00000000000000000000000000000000
+    layerID: 106
+    mosaicPosition: {x: 0, y: 0}
+  - name: BrickDirtyRed
+    spriteName: 
+    isGroup: 1
+    parentIndex: 122
+    spriteID: 00000000000000000000000000000000
+    layerID: 105
+    mosaicPosition: {x: 0, y: 0}
+  - name: RedAndGreyColumnUp
+    spriteName: RedAndGreyColumnUp
+    isGroup: 0
+    parentIndex: 123
+    spriteID: 90f6ab3cf9d47ba459da1631902cc628
+    layerID: 103
+    mosaicPosition: {x: 148, y: 172}
+  - name: DestroyDirtyBrickRedAndGrey
+    spriteName: DestroyDirtyBrickRedAndGrey
+    isGroup: 0
+    parentIndex: 123
+    spriteID: fb02e151b7970b745990d41e29bbd1cd
+    layerID: 97
+    mosaicPosition: {x: 172, y: 172}
+  - name: SpottedDirtyBrickRedAndGrey
+    spriteName: SpottedDirtyBrickRedAndGrey
+    isGroup: 0
+    parentIndex: 123
+    spriteID: 9469c58e91e42d44d836169938b8c58c
+    layerID: 91
+    mosaicPosition: {x: 196, y: 172}
+  - name: DirtyBrickRedAndGreyInsideLeft
+    spriteName: DirtyBrickRedAndGreyInsideLeft
+    isGroup: 0
+    parentIndex: 123
+    spriteID: 6c7bac8342e0a79489e6304761afbbe9
+    layerID: 84
+    mosaicPosition: {x: 220, y: 172}
+  - name: DirtyBrickRedAndGreyLeft
+    spriteName: DirtyBrickRedAndGreyLeft
+    isGroup: 0
+    parentIndex: 123
+    spriteID: 80df712c97e6c144eb2257a2ebe17d2a
+    layerID: 78
+    mosaicPosition: {x: 4, y: 196}
+  - name: DirtyBrickRedAndGreyInsideRight
+    spriteName: DirtyBrickRedAndGreyInsideRight
+    isGroup: 0
+    parentIndex: 123
+    spriteID: b308d5c94799f074f8a3773f3b319003
+    layerID: 72
+    mosaicPosition: {x: 28, y: 196}
+  - name: DirtyBrickRedAndGreyRight
+    spriteName: DirtyBrickRedAndGreyRight
+    isGroup: 0
+    parentIndex: 123
+    spriteID: 30701308fddf18f418da9ee825a2131a
+    layerID: 66
+    mosaicPosition: {x: 52, y: 196}
+  - name: DirtyBrickRedAndGreyColumn
+    spriteName: DirtyBrickRedAndGreyColumn
+    isGroup: 0
+    parentIndex: 123
+    spriteID: fd13f422b8dcb8d459d0fd5837fa9028
+    layerID: 60
+    mosaicPosition: {x: 82, y: 4}
+  - name: DirtyBrickRedAndGrey
+    spriteName: DirtyBrickRedAndGrey
+    isGroup: 0
+    parentIndex: 123
+    spriteID: 2bb43839ad4e7ce4fad75f6e1e288c27
+    layerID: 54
+    mosaicPosition: {x: 76, y: 196}
+  - name: BrickRed
+    spriteName: 
+    isGroup: 1
+    parentIndex: 122
+    spriteID: 00000000000000000000000000000000
+    layerID: 48
+    mosaicPosition: {x: 0, y: 0}
+  - name: DestroyBrickRedAndGrey
+    spriteName: DestroyBrickRedAndGrey
+    isGroup: 0
+    parentIndex: 133
+    spriteID: bef0b2800c0aa87438f973bc8e61c1f1
+    layerID: 46
+    mosaicPosition: {x: 100, y: 196}
+  - name: SpottedBrickRedAndGrey
+    spriteName: SpottedBrickRedAndGrey
+    isGroup: 0
+    parentIndex: 133
+    spriteID: 4c88408f35f26c9459b5292698d5d920
+    layerID: 40
+    mosaicPosition: {x: 124, y: 196}
+  - name: BrickRedAndGrey
+    spriteName: BrickRedAndGrey
+    isGroup: 0
+    parentIndex: 133
+    spriteID: 02808dc59c8e11845b8832478a64d94f
+    layerID: 33
+    mosaicPosition: {x: 148, y: 196}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: EnviromentBlocks Texture
+  prefabAssetName: EnviromentBlocks Prefab
+  spriteLibAssetName: EnviromentBlocks Sprite Lib
+  secondarySpriteTextures: []
